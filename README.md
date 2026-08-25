@@ -14,11 +14,11 @@ python scripts/check_env.py
 
 ## Model smoke test
 
-确认模型已完整下载到 `HF_HOME` 指定的缓存后，运行本地 4-bit NF4 推理测试：
+模型固定从 `/data/PersonalCoder/model` 加载。确认本地模型文件完整后，运行 4-bit NF4 推理测试：
 
 ```bash
 source .venv/bin/activate
 python scripts/test_model.py
 ```
 
-测试仅使用本地缓存，不会自动下载模型。
+测试设置了 `local_files_only=True`，不依赖 Hugging Face 在线下载。

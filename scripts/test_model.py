@@ -3,7 +3,6 @@
 
 from __future__ import annotations
 
-import os
 import sys
 from pathlib import Path
 
@@ -11,7 +10,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
 
-MODEL_NAME = "Qwen/Qwen2.5-Coder-1.5B-Instruct"
+MODEL_PATH = Path("/data/PersonalCoder/model")
 MAX_NEW_TOKENS = 512
 PROMPT = "请用 C++ 实现两个整数相加，只输出完整代码。"
 
@@ -23,16 +22,17 @@ def memory_mib() -> str:
 
 
 def main() -> int:
-    hf_home = os.environ.get("HF_HOME")
-    if not hf_home:
-        print("ERROR: HF_HOME is not set. Set it to the existing Hugging Face cache directory.", file=sys.stderr)
+    if not MODEL_PATH.is_dir() or not (MODEL_PATH / "config.json").is_file():
+        print(
+            f"ERROR: Local model files were not found or are incomplete: {MODEL_PATH}",
+            file=sys.stderr,
+        )
         return 1
     if not torch.cuda.is_available():
         print("ERROR: CUDA is not available; this 4-bit smoke test requires a CUDA GPU.", file=sys.stderr)
         return 1
 
-    hub_cache = Path(hf_home).expanduser() / "hub"
-    print(f"HF_HOME: {Path(hf_home).expanduser()}")
+    print(f"Local model path: {MODEL_PATH}")
     print(f"GPU memory before loading: {memory_mib()}")
     torch.cuda.reset_peak_memory_stats()
 
@@ -45,21 +45,19 @@ def main() -> int:
 
     try:
         tokenizer = AutoTokenizer.from_pretrained(
-            MODEL_NAME,
-            cache_dir=hub_cache,
+            MODEL_PATH,
             local_files_only=True,
         )
         model = AutoModelForCausalLM.from_pretrained(
-            MODEL_NAME,
-            cache_dir=hub_cache,
+            MODEL_PATH,
             local_files_only=True,
             quantization_config=quantization_config,
             device_map={"": 0},
         )
     except (OSError, ValueError) as error:
         print(
-            "ERROR: The model is missing or incomplete in the local Hugging Face cache. "
-            "Wait for the manual download to finish; this script will not download it.\n"
+            f"ERROR: Failed to load the local model from {MODEL_PATH}. "
+            "Verify that all model files are present; this script will not download anything.\n"
             f"Details: {error}",
             file=sys.stderr,
         )

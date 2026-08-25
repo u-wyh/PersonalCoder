@@ -1,4 +1,4 @@
-model_name: Qwen/Qwen2.5-Coder-1.5B-Instruct
+model_name: /data/PersonalCoder/model
 load_in_4bit: true
 quantization_type: nf4
 compute_dtype: float16
