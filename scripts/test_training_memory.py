@@ -20,8 +20,8 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 MODEL_PATH = Path("/data/PersonalCoder/model")
 TRAIN_PATH = PROJECT_ROOT / "data" / "processed" / "style" / "train.jsonl"
 REPORT_PATH = PROJECT_ROOT / "outputs" / "training_memory_report.json"
-SEQUENCE_LENGTHS = (768, 1024)
-TRAIN_STEPS = 2
+SEQUENCE_LENGTHS = (512,)
+TRAIN_STEPS = 3
 
 
 def memory_snapshot() -> dict[str, float]:
@@ -29,6 +29,7 @@ def memory_snapshot() -> dict[str, float]:
         "allocated_mib": round(torch.cuda.memory_allocated() / 1024**2, 2),
         "reserved_mib": round(torch.cuda.memory_reserved() / 1024**2, 2),
         "peak_allocated_mib": round(torch.cuda.max_memory_allocated() / 1024**2, 2),
+        "peak_reserved_mib": round(torch.cuda.max_memory_reserved() / 1024**2, 2),
     }
 
 
@@ -192,13 +193,6 @@ def main() -> int:
         test_result = run_benchmark(tokenizer, sequence_length)
         tests[str(sequence_length)] = test_result
         print(json.dumps(test_result, ensure_ascii=False, indent=2))
-        if sequence_length == 768 and test_result["cuda_oom"]:
-            tests["1024"] = {
-                "max_seq_length": 1024,
-                "skipped": True,
-                "reason": "Skipped because max_seq_length=768 caused CUDA OOM",
-            }
-            break
 
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
     REPORT_PATH.write_text(
