@@ -1,0 +1,5 @@
+id: p001
+title: Sum of Integers
+time_limit_seconds: 1.0
+memory_limit_mb: 128
+stdout_limit_kb: 64
