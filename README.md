@@ -22,3 +22,15 @@ python scripts/test_model.py
 ```
 
 测试设置了 `local_files_only=True`，不依赖 Hugging Face 在线下载。
+
+## RTX 4060：1536-token Style QLoRA
+
+该实验使用独立数据目录和 checkpoint 目录：
+
+```bash
+source .venv/bin/activate
+python scripts/build_style_chunks_1536.py
+python scripts/train_style_lora_1536.py --config configs/style_lora_1536_v1.json
+```
+
+训练脚本在目标目录非空时会直接拒绝运行，避免覆盖已有 adapter。

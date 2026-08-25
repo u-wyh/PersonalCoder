@@ -1,0 +1,32 @@
+{
+  "model_path": "/data/PersonalCoder/model",
+  "dataset_path": "data/processed/style_chunks_1536",
+  "output_dir": "/data/PersonalCoder/checkpoints/rtx4060/style_lora_1536_v1",
+  "local_files_only": true,
+  "seed": 42,
+  "quantization": {
+    "load_in_4bit": true,
+    "quant_type": "nf4",
+    "compute_dtype": "float16",
+    "use_double_quant": true
+  },
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "target_modules": ["q_proj", "v_proj"]
+  },
+  "training": {
+    "max_seq_length": 1536,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "gradient_checkpointing": true,
+    "use_cache": false,
+    "optimizer": "PagedAdamW8bit",
+    "learning_rate": 0.0002,
+    "warmup_ratio": 0.03,
+    "lr_scheduler_type": "cosine",
+    "num_train_epochs": 1,
+    "fp16": true
+  }
+}
