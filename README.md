@@ -22,3 +22,14 @@ python scripts/test_model.py
 ```
 
 测试设置了 `local_files_only=True`，不依赖 Hugging Face 在线下载。
+
+## Style LoRA Training
+
+第一版风格 LoRA 使用本地模型和预先划分的 style chunks 数据集：
+
+```bash
+source .venv/bin/activate
+python scripts/train_style_lora.py
+```
+
+训练 checkpoint 和最终 adapter 保存到 `/data/PersonalCoder/checkpoints/style_lora_v1`，不会提交到项目仓库。
