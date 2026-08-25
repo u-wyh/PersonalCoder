@@ -1,0 +1,48 @@
+model_path: /data/PersonalCoder/model
+dataset_path: data/processed/style_v3
+output_dir: /data/PersonalCoder/checkpoints/rtx4060/style_lora_v3
+report_path: outputs/style_lora_v3_training_report.json
+local_files_only: true
+seed: 42
+
+quantization:
+  load_in_4bit: true
+  quant_type: nf4
+  compute_dtype: float16
+  use_double_quant: true
+
+lora:
+  r: 8
+  alpha: 16
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - v_proj
+
+training:
+  num_train_epochs: 1
+  max_seq_length: 1536
+  auto_select_batch_size: true
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 8
+  gradient_checkpointing: true
+  use_cache: false
+  optimizer: PagedAdamW8bit
+  learning_rate: 0.0002
+  warmup_ratio: 0.03
+  lr_scheduler_type: cosine
+  fp16: true
+  logging_optimizer_steps: 10
+
+sampling:
+  strategy: weighted_random_sampler
+  replacement: true
+  num_samples: train_dataset_size
+  probability: proportional_to_time_weight
+  validation_weighted: false
+
+verification:
+  max_new_tokens: 512
+  do_sample: false
+  compile_standard: c++17
