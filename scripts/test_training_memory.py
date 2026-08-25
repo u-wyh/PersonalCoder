@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Run two-step QLoRA memory benchmarks without saving model state."""
+"""Run offline QLoRA memory benchmarks without saving model state."""
 
 from __future__ import annotations
 
 import gc
 import json
 import statistics
+import subprocess
 import sys
 import time
 from pathlib import Path
@@ -19,8 +20,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 MODEL_PATH = Path("/data/PersonalCoder/model")
 TRAIN_PATH = PROJECT_ROOT / "data" / "processed" / "style" / "train.jsonl"
-REPORT_PATH = PROJECT_ROOT / "outputs" / "training_memory_report.json"
-SEQUENCE_LENGTHS = (512,)
+REPORT_PATH = PROJECT_ROOT / "outputs" / "gpu4060_memory_report.json"
+SEQUENCE_LENGTHS = (768, 1024, 1536, 2048)
 TRAIN_STEPS = 3
 
 
@@ -33,11 +34,35 @@ def memory_snapshot() -> dict[str, float]:
     }
 
 
-def load_batches(tokenizer: object, sequence_length: int) -> list[dict[str, torch.Tensor]]:
+def gpu_used_memory_mib() -> float | None:
+    """Return whole-device used memory, including memory owned by other processes."""
+    try:
+        output = subprocess.check_output(
+            [
+                "nvidia-smi",
+                "--query-gpu=memory.used",
+                "--format=csv,noheader,nounits",
+                "--id=0",
+            ],
+            text=True,
+        )
+        return round(float(output.strip().splitlines()[0]), 2)
+    except (OSError, subprocess.SubprocessError, ValueError, IndexError):
+        return None
+
+
+def load_batches(
+    tokenizer: object, sequence_length: int
+) -> tuple[list[dict[str, torch.Tensor]], list[dict[str, object]]]:
     batches: list[dict[str, torch.Tensor]] = []
+    samples: list[dict[str, object]] = []
     with TRAIN_PATH.open(encoding="utf-8") as dataset:
         for line in dataset:
-            text = json.loads(line)["text"]
+            record = json.loads(line)
+            text = record["text"]
+            full_ids = tokenizer(text, add_special_tokens=False)["input_ids"]
+            if len(full_ids) < sequence_length:
+                continue
             encoded = tokenizer(
                 text,
                 add_special_tokens=False,
@@ -46,11 +71,17 @@ def load_batches(tokenizer: object, sequence_length: int) -> list[dict[str, torc
                 padding=False,
                 return_tensors="pt",
             )
-            if encoded.input_ids.shape[1] != sequence_length:
-                continue
             batches.append({key: value for key, value in encoded.items()})
+            samples.append(
+                {
+                    "path": record.get("path"),
+                    "source_type": record.get("source_type"),
+                    "full_sample_tokens": len(full_ids),
+                    "tokens_used": sequence_length,
+                }
+            )
             if len(batches) == TRAIN_STEPS:
-                return batches
+                return batches, samples
     raise ValueError(f"Could not find {TRAIN_STEPS} samples with at least {sequence_length} tokens")
 
 
@@ -75,9 +106,11 @@ def run_benchmark(tokenizer: object, sequence_length: int) -> dict[str, object]:
     gc.collect()
     torch.cuda.empty_cache()
     torch.cuda.reset_peak_memory_stats()
+    result["gpu_used_memory_before_test_mib"] = gpu_used_memory_mib()
 
     try:
-        batches = load_batches(tokenizer, sequence_length)
+        batches, samples = load_batches(tokenizer, sequence_length)
+        result["samples"] = samples
         quantization_config = BitsAndBytesConfig(
             load_in_4bit=True,
             bnb_4bit_quant_type="nf4",
@@ -180,6 +213,7 @@ def main() -> int:
             "target_modules": ["q_proj", "v_proj"],
             "batch_size": 1,
             "gradient_checkpointing": True,
+            "use_cache": False,
             "optimizer": "PagedAdamW8bit",
             "learning_rate": 0.0002,
             "steps_per_length": TRAIN_STEPS,
@@ -193,6 +227,38 @@ def main() -> int:
         test_result = run_benchmark(tokenizer, sequence_length)
         tests[str(sequence_length)] = test_result
         print(json.dumps(test_result, ensure_ascii=False, indent=2))
+        if test_result["cuda_oom"]:
+            print("CUDA OOM encountered; skipping all longer sequence lengths.")
+            break
+
+    successful_lengths = [
+        int(length) for length, result in tests.items() if result["success"]
+    ]
+    max_stable = max(successful_lengths, default=None)
+    total_memory_mib = round(torch.cuda.get_device_properties(0).total_memory / 1024**2, 2)
+    recommended_candidates = [
+        length
+        for length in successful_lengths
+        if tests[str(length)]["peak_reserved_mib"] <= total_memory_mib * 0.75
+    ]
+    recommended_length = max(recommended_candidates, default=max_stable)
+    max_stable_reserved = (
+        tests[str(max_stable)]["peak_reserved_mib"] if max_stable is not None else None
+    )
+    report["conclusion"] = {
+        "gpu_total_memory_mib": total_memory_mib,
+        "maximum_stable_sequence_length": max_stable,
+        "recommended_training_sequence_length": recommended_length,
+        "enough_headroom_to_try_longer_context": (
+            max_stable == max(SEQUENCE_LENGTHS)
+            and max_stable_reserved <= total_memory_mib * 0.80
+        ) if max_stable is not None else False,
+        "recommendation_basis": (
+            "The stable maximum is the largest length completing all 3 steps. The "
+            "formal-training recommendation keeps peak reserved memory at or below "
+            "75% of VRAM, and trying longer context requires at least 20% VRAM headroom."
+        ),
+    }
 
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
     REPORT_PATH.write_text(
