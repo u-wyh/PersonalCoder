@@ -1,7 +1,9 @@
 data/raw/algorithm/
 data/processed/
 outputs/
-benchmark/reports/
+benchmark/reports/*
+!benchmark/reports/summary.json
+!benchmark/reports/pilot_results.md
 benchmark/raw_outputs/
 .venv/
 __pycache__/

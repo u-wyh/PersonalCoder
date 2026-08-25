@@ -1,0 +1,227 @@
+{
+  "Base": {
+    "compile_rate": 0.766667,
+    "ac_rate": 0.166667,
+    "clean_ac_rate": 0.208333,
+    "overall": {
+      "full": {
+        "total": 30,
+        "compile": 23,
+        "compile_rate": 0.766667,
+        "ac": 5,
+        "ac_rate": 0.166667
+      },
+      "clean": {
+        "total": 24,
+        "compile": 17,
+        "compile_rate": 0.708333,
+        "ac": 5,
+        "ac_rate": 0.208333
+      }
+    },
+    "difficulty": {
+      "easy": {
+        "total": 12,
+        "compile": 7,
+        "compile_rate": 0.583333,
+        "ac": 3,
+        "ac_rate": 0.25
+      },
+      "medium": {
+        "total": 12,
+        "compile": 11,
+        "compile_rate": 0.916667,
+        "ac": 2,
+        "ac_rate": 0.166667
+      },
+      "hard": {
+        "total": 6,
+        "compile": 5,
+        "compile_rate": 0.833333,
+        "ac": 0,
+        "ac_rate": 0.0
+      }
+    },
+    "source": {
+      "luogu": {
+        "total": 10,
+        "compile": 9,
+        "compile_rate": 0.9,
+        "ac": 1,
+        "ac_rate": 0.1
+      },
+      "codeforces": {
+        "total": 10,
+        "compile": 6,
+        "compile_rate": 0.6,
+        "ac": 3,
+        "ac_rate": 0.3
+      },
+      "icpc": {
+        "total": 10,
+        "compile": 8,
+        "compile_rate": 0.8,
+        "ac": 1,
+        "ac_rate": 0.1
+      }
+    },
+    "contaminated_problems": [
+      "p013",
+      "p015",
+      "p016",
+      "p017",
+      "p025",
+      "p026"
+    ]
+  },
+  "LoRA-512": {
+    "compile_rate": 0.766667,
+    "ac_rate": 0.2,
+    "clean_ac_rate": 0.25,
+    "overall": {
+      "full": {
+        "total": 30,
+        "compile": 23,
+        "compile_rate": 0.766667,
+        "ac": 6,
+        "ac_rate": 0.2
+      },
+      "clean": {
+        "total": 24,
+        "compile": 20,
+        "compile_rate": 0.833333,
+        "ac": 6,
+        "ac_rate": 0.25
+      }
+    },
+    "difficulty": {
+      "easy": {
+        "total": 12,
+        "compile": 10,
+        "compile_rate": 0.833333,
+        "ac": 5,
+        "ac_rate": 0.416667
+      },
+      "medium": {
+        "total": 12,
+        "compile": 10,
+        "compile_rate": 0.833333,
+        "ac": 1,
+        "ac_rate": 0.083333
+      },
+      "hard": {
+        "total": 6,
+        "compile": 3,
+        "compile_rate": 0.5,
+        "ac": 0,
+        "ac_rate": 0.0
+      }
+    },
+    "source": {
+      "luogu": {
+        "total": 10,
+        "compile": 6,
+        "compile_rate": 0.6,
+        "ac": 1,
+        "ac_rate": 0.1
+      },
+      "codeforces": {
+        "total": 10,
+        "compile": 9,
+        "compile_rate": 0.9,
+        "ac": 4,
+        "ac_rate": 0.4
+      },
+      "icpc": {
+        "total": 10,
+        "compile": 8,
+        "compile_rate": 0.8,
+        "ac": 1,
+        "ac_rate": 0.1
+      }
+    },
+    "contaminated_problems": [
+      "p013",
+      "p015",
+      "p016",
+      "p017",
+      "p025",
+      "p026"
+    ]
+  },
+  "LoRA-1536": {
+    "compile_rate": 0.833333,
+    "ac_rate": 0.166667,
+    "clean_ac_rate": 0.208333,
+    "overall": {
+      "full": {
+        "total": 30,
+        "compile": 25,
+        "compile_rate": 0.833333,
+        "ac": 5,
+        "ac_rate": 0.166667
+      },
+      "clean": {
+        "total": 24,
+        "compile": 21,
+        "compile_rate": 0.875,
+        "ac": 5,
+        "ac_rate": 0.208333
+      }
+    },
+    "difficulty": {
+      "easy": {
+        "total": 12,
+        "compile": 11,
+        "compile_rate": 0.916667,
+        "ac": 4,
+        "ac_rate": 0.333333
+      },
+      "medium": {
+        "total": 12,
+        "compile": 10,
+        "compile_rate": 0.833333,
+        "ac": 1,
+        "ac_rate": 0.083333
+      },
+      "hard": {
+        "total": 6,
+        "compile": 4,
+        "compile_rate": 0.666667,
+        "ac": 0,
+        "ac_rate": 0.0
+      }
+    },
+    "source": {
+      "luogu": {
+        "total": 10,
+        "compile": 7,
+        "compile_rate": 0.7,
+        "ac": 1,
+        "ac_rate": 0.1
+      },
+      "codeforces": {
+        "total": 10,
+        "compile": 10,
+        "compile_rate": 1.0,
+        "ac": 4,
+        "ac_rate": 0.4
+      },
+      "icpc": {
+        "total": 10,
+        "compile": 8,
+        "compile_rate": 0.8,
+        "ac": 0,
+        "ac_rate": 0.0
+      }
+    },
+    "contaminated_problems": [
+      "p013",
+      "p015",
+      "p016",
+      "p017",
+      "p025",
+      "p026"
+    ]
+  }
+}
