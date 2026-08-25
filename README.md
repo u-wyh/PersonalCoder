@@ -11,3 +11,14 @@ python scripts/check_env.py
 ```
 
 脚本会输出 Python、PyTorch、CUDA、GPU 以及训练相关核心包的版本和状态。若 CUDA 不可用，脚本会清晰报错并以非零状态退出，但不会修改任何系统配置。
+
+## Model smoke test
+
+确认模型已完整下载到 `HF_HOME` 指定的缓存后，运行本地 4-bit NF4 推理测试：
+
+```bash
+source .venv/bin/activate
+python scripts/test_model.py
+```
+
+测试仅使用本地缓存，不会自动下载模型。
