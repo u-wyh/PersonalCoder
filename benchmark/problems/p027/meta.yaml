@@ -1,0 +1,8 @@
+id: p027
+title: Almost Shortest Path
+oj: icpc
+problem_id: BOJ-5719
+difficulty: hard
+time_limit_seconds: 3.0
+memory_limit_mb: 256
+stdout_limit_kb: 1024

@@ -1,0 +1,4 @@
+#include <bits/stdc++.h>
+using namespace std;struct N{int lv=0,rv=0,len=0,pre=0,suf=0,best=0;};
+N mergeN(N a,N b){if(!a.len)return b;if(!b.len)return a;N c{a.lv,b.rv,a.len+b.len,a.pre,b.suf,max(a.best,b.best)};if(a.rv==b.lv){c.best=max(c.best,a.suf+b.pre);if(a.pre==a.len)c.pre=a.len+b.pre;if(b.suf==b.len)c.suf=b.len+a.suf;}return c;}
+int main(){ios::sync_with_stdio(false);cin.tie(nullptr);int n,q;while(cin>>n&&n){cin>>q;vector<int>a(n);for(int&x:a)cin>>x;vector<N>t(4*n);function<void(int,int,int)>build=[&](int p,int l,int r){if(l==r){t[p]={a[l],a[l],1,1,1,1};return;}int m=(l+r)/2;build(p*2,l,m);build(p*2+1,m+1,r);t[p]=mergeN(t[p*2],t[p*2+1]);};build(1,0,n-1);function<N(int,int,int,int,int)>ask=[&](int p,int l,int r,int x,int y)->N{if(y<l||r<x)return {};if(x<=l&&r<=y)return t[p];int m=(l+r)/2;return mergeN(ask(p*2,l,m,x,y),ask(p*2+1,m+1,r,x,y));};while(q--){int l,r;cin>>l>>r;cout<<ask(1,0,n-1,l-1,r-1).best<<'\n';}}}

@@ -1,0 +1,8 @@
+id: p024
+title: Canonical Coin Systems
+oj: icpc
+problem_id: KATTIS-canonical
+difficulty: medium
+time_limit_seconds: 2.0
+memory_limit_mb: 256
+stdout_limit_kb: 1024
