@@ -1,0 +1,199 @@
+{
+  "model": "Instruction-SFT-v1",
+  "base_model": "/data/PersonalCoder/model",
+  "adapter": "/data/PersonalCoder/checkpoints/rtx4060/instruction_sft_v1/final_adapter",
+  "prompt_file": "/home/wyh15/PersonalCoder/benchmark/prompts/cpp_only.txt",
+  "prompt_sha256": "8bda7c56ee6de2166e02c0f6c3571ba7d9f541058e344578363498ab31e03997",
+  "problems": 30,
+  "generation_config": {
+    "max_new_tokens": 1024,
+    "do_sample": false,
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "num_beams": 1,
+    "repetition_penalty": 1.0,
+    "use_cache": true
+  },
+  "records": [
+    {
+      "problem": "p001",
+      "generated_tokens": 47,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p001.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p001.cpp"
+    },
+    {
+      "problem": "p002",
+      "generated_tokens": 82,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p002.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p002.cpp"
+    },
+    {
+      "problem": "p003",
+      "generated_tokens": 140,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p003.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p003.cpp"
+    },
+    {
+      "problem": "p004",
+      "generated_tokens": 141,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p004.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p004.cpp"
+    },
+    {
+      "problem": "p005",
+      "generated_tokens": 213,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p005.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p005.cpp"
+    },
+    {
+      "problem": "p006",
+      "generated_tokens": 94,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p006.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p006.cpp"
+    },
+    {
+      "problem": "p007",
+      "generated_tokens": 239,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p007.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p007.cpp"
+    },
+    {
+      "problem": "p008",
+      "generated_tokens": 82,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p008.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p008.cpp"
+    },
+    {
+      "problem": "p009",
+      "generated_tokens": 131,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p009.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p009.cpp"
+    },
+    {
+      "problem": "p010",
+      "generated_tokens": 122,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p010.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p010.cpp"
+    },
+    {
+      "problem": "p011",
+      "generated_tokens": 94,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p011.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p011.cpp"
+    },
+    {
+      "problem": "p012",
+      "generated_tokens": 129,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p012.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p012.cpp"
+    },
+    {
+      "problem": "p013",
+      "generated_tokens": 104,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p013.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p013.cpp"
+    },
+    {
+      "problem": "p014",
+      "generated_tokens": 288,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p014.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p014.cpp"
+    },
+    {
+      "problem": "p015",
+      "generated_tokens": 380,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p015.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p015.cpp"
+    },
+    {
+      "problem": "p016",
+      "generated_tokens": 283,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p016.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p016.cpp"
+    },
+    {
+      "problem": "p017",
+      "generated_tokens": 232,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p017.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p017.cpp"
+    },
+    {
+      "problem": "p018",
+      "generated_tokens": 143,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p018.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p018.cpp"
+    },
+    {
+      "problem": "p019",
+      "generated_tokens": 141,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p019.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p019.cpp"
+    },
+    {
+      "problem": "p020",
+      "generated_tokens": 109,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p020.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p020.cpp"
+    },
+    {
+      "problem": "p021",
+      "generated_tokens": 138,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p021.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p021.cpp"
+    },
+    {
+      "problem": "p022",
+      "generated_tokens": 305,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p022.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p022.cpp"
+    },
+    {
+      "problem": "p023",
+      "generated_tokens": 223,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p023.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p023.cpp"
+    },
+    {
+      "problem": "p024",
+      "generated_tokens": 213,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p024.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p024.cpp"
+    },
+    {
+      "problem": "p025",
+      "generated_tokens": 219,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p025.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p025.cpp"
+    },
+    {
+      "problem": "p026",
+      "generated_tokens": 446,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p026.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p026.cpp"
+    },
+    {
+      "problem": "p027",
+      "generated_tokens": 442,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p027.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p027.cpp"
+    },
+    {
+      "problem": "p028",
+      "generated_tokens": 188,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p028.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p028.cpp"
+    },
+    {
+      "problem": "p029",
+      "generated_tokens": 204,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p029.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p029.cpp"
+    },
+    {
+      "problem": "p030",
+      "generated_tokens": 1024,
+      "raw_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/raw/Instruction-SFT-v1/p030.txt",
+      "code_output": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P0/Instruction-SFT-v1/p030.cpp"
+    }
+  ]
+}

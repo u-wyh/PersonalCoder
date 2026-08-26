@@ -1,0 +1,1135 @@
+{
+  "definitions": {
+    "pure_code": "raw output is unfenced C++ with no surrounding prose",
+    "markdown_code_fence": "raw output uses a Markdown code fence, including an unclosed fence caused by truncation",
+    "extra_natural_language": "non-code prose exists outside the code block",
+    "unextractable": "saved extraction is empty or has no recognizable C++ include/main marker",
+    "strict_code_only": "pure_code=true; fenced output does not satisfy the literal P0 code-only instruction"
+  },
+  "models": {
+    "Base": {
+      "total": 30,
+      "pure_code": 0,
+      "markdown_code_fence": 30,
+      "extra_natural_language": 0,
+      "extraction_success": 30,
+      "unextractable": 0,
+      "strict_code_only": 0,
+      "per_problem": [
+        {
+          "problem": "p001",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p002",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p003",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p004",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p005",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p006",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p007",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p008",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p009",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p010",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p011",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p012",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p013",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p014",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p015",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p016",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p017",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p018",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p019",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p020",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p021",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p022",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p023",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p024",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p025",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p026",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p027",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p028",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p029",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p030",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        }
+      ]
+    },
+    "LoRA-512": {
+      "total": 30,
+      "pure_code": 0,
+      "markdown_code_fence": 30,
+      "extra_natural_language": 0,
+      "extraction_success": 30,
+      "unextractable": 0,
+      "strict_code_only": 0,
+      "per_problem": [
+        {
+          "problem": "p001",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p002",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p003",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p004",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p005",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p006",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p007",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p008",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p009",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p010",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p011",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p012",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p013",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p014",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p015",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p016",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p017",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p018",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p019",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p020",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p021",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p022",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p023",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p024",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p025",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p026",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p027",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p028",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p029",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p030",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        }
+      ]
+    },
+    "LoRA-1536": {
+      "total": 30,
+      "pure_code": 0,
+      "markdown_code_fence": 30,
+      "extra_natural_language": 0,
+      "extraction_success": 30,
+      "unextractable": 0,
+      "strict_code_only": 0,
+      "per_problem": [
+        {
+          "problem": "p001",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p002",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p003",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p004",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p005",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p006",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p007",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p008",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p009",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p010",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p011",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p012",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p013",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p014",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p015",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p016",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p017",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p018",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p019",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p020",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p021",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p022",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p023",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p024",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p025",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p026",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p027",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p028",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p029",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p030",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        }
+      ]
+    },
+    "Instruction-SFT-v1": {
+      "total": 30,
+      "pure_code": 0,
+      "markdown_code_fence": 30,
+      "extra_natural_language": 0,
+      "extraction_success": 30,
+      "unextractable": 0,
+      "strict_code_only": 0,
+      "per_problem": [
+        {
+          "problem": "p001",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p002",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p003",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p004",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p005",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p006",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p007",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p008",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p009",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p010",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p011",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p012",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p013",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p014",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p015",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p016",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p017",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p018",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p019",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p020",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p021",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p022",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p023",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p024",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p025",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p026",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p027",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p028",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p029",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        },
+        {
+          "problem": "p030",
+          "primary_category": "markdown_code_fence",
+          "pure_code": false,
+          "markdown_code_fence": true,
+          "extra_natural_language": false,
+          "extraction_success": true,
+          "strict_code_only": false
+        }
+      ]
+    }
+  }
+}

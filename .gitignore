@@ -17,6 +17,8 @@ benchmark/reports/*
 !benchmark/reports/pilot_v1_1/**
 !benchmark/reports/prompt_ablation/
 !benchmark/reports/prompt_ablation/**
+!benchmark/reports/instruction_sft_v1/
+!benchmark/reports/instruction_sft_v1/**
 benchmark/raw_outputs/
 benchmark/ablation/
 instruction_sft/data/statements/raw/
