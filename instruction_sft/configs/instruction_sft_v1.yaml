@@ -1,0 +1,50 @@
+version: instruction_sft_v1
+base_model: /data/PersonalCoder/model
+train_file: instruction_sft/data/splits/train.jsonl
+validation_file: instruction_sft/data/splits/val.jsonl
+output_dir: /data/PersonalCoder/checkpoints/rtx4060/instruction_sft_v1
+report_json: instruction_sft/reports/training_v1.json
+report_markdown: instruction_sft/reports/training_v1.md
+local_files_only: true
+seed: 42
+
+quantization:
+  load_in_4bit: true
+  quant_type: nf4
+  compute_dtype: float16
+  use_double_quant: true
+
+lora:
+  r: 8
+  alpha: 16
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - v_proj
+  bias: none
+
+training:
+  epochs: 1
+  max_seq_length: 2048
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+  gradient_accumulation_steps: 8
+  effective_batch_size: 8
+  gradient_checkpointing: true
+  optimizer: PagedAdamW8bit
+  learning_rate: 0.0001
+  warmup_ratio: 0.03
+  lr_scheduler: cosine
+  fp16: true
+  logging_optimizer_steps: 10
+  save_optimizer_steps: 50
+  assistant_only_loss: true
+
+sanity:
+  train_samples: 16
+  validation_samples: 8
+  gradient_accumulation_steps: 2
+  optimizer_steps: 8
+  output_dir: /data/PersonalCoder/checkpoints/rtx4060/instruction_sft_v1_sanity
+  report_json: instruction_sft/reports/training_v1_sanity.json
+  report_markdown: instruction_sft/reports/training_v1_sanity.md

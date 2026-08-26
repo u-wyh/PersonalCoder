@@ -1,0 +1,52 @@
+{
+  "completed": true,
+  "sanity": false,
+  "base_model": "/data/PersonalCoder/model",
+  "train_samples": 1630,
+  "validation_samples": 181,
+  "max_seq_length": 2048,
+  "truncated_train_samples": 202,
+  "truncation_rate": 0.123926,
+  "epochs": 1,
+  "optimizer_steps": 204,
+  "micro_steps": 1630,
+  "per_device_train_batch_size": 1,
+  "gradient_accumulation_steps": 8,
+  "effective_batch_size": 8,
+  "learning_rate": 0.0001,
+  "optimizer": "PagedAdamW8bit",
+  "train_loss": 0.6028044459461435,
+  "eval_loss": 0.5953764789506216,
+  "training_time_seconds": 2161.783,
+  "peak_allocated_memory_mib": 5937.33,
+  "peak_reserved_memory_mib": 15208.0,
+  "trainable_parameters": 1089536,
+  "quantization": {
+    "load_in_4bit": true,
+    "quant_type": "nf4",
+    "compute_dtype": "float16",
+    "use_double_quant": true
+  },
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "bias": "none"
+  },
+  "mask_audit": {
+    "checked_samples": 16,
+    "prompt_labels_all_masked": true,
+    "assistant_labels_present": true
+  },
+  "adapter_reload": {
+    "fresh_base_loaded": true,
+    "adapter_reloaded": true,
+    "trainable_parameters": 0
+  },
+  "final_adapter_path": "/data/PersonalCoder/checkpoints/rtx4060/instruction_sft_v1/final_adapter",
+  "seed": 42
+}

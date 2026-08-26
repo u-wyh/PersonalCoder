@@ -1,0 +1,66 @@
+{
+  "dataset": "/home/wyh15/PersonalCoder/instruction_sft/data/splits/train.jsonl",
+  "tokenizer": "/data/PersonalCoder/model",
+  "sample_count": 1630,
+  "percentile_method": "nearest_rank",
+  "instruction_tokens": {
+    "count": 1630,
+    "min": 180,
+    "mean": 675.1,
+    "p50": 586,
+    "p75": 790,
+    "p90": 1074,
+    "p95": 1319,
+    "p99": 1868,
+    "max": 20368
+  },
+  "response_tokens": {
+    "count": 1630,
+    "min": 82,
+    "mean": 690.46,
+    "p50": 586,
+    "p75": 893,
+    "p90": 1234,
+    "p95": 1442,
+    "p99": 1991,
+    "max": 10096
+  },
+  "total_chat_tokens": {
+    "count": 1630,
+    "min": 341,
+    "mean": 1396.56,
+    "p50": 1270,
+    "p75": 1669,
+    "p90": 2199,
+    "p95": 2491,
+    "p99": 3330,
+    "max": 20912
+  },
+  "candidate_sequence_lengths": {
+    "1024": {
+      "truncated_samples": 1107,
+      "truncation_rate": 0.679141,
+      "coverage_rate": 0.320859
+    },
+    "1536": {
+      "truncated_samples": 527,
+      "truncation_rate": 0.323313,
+      "coverage_rate": 0.676687
+    },
+    "2048": {
+      "truncated_samples": 202,
+      "truncation_rate": 0.123926,
+      "coverage_rate": 0.876074
+    },
+    "3072": {
+      "truncated_samples": 30,
+      "truncation_rate": 0.018405,
+      "coverage_rate": 0.981595
+    },
+    "4096": {
+      "truncated_samples": 7,
+      "truncation_rate": 0.004294,
+      "coverage_rate": 0.995706
+    }
+  }
+}
