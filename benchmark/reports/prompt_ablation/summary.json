@@ -1,0 +1,635 @@
+{
+  "metadata": {
+    "prompts": [
+      "P0",
+      "P1",
+      "P2"
+    ],
+    "models": [
+      "Base",
+      "LoRA-512",
+      "LoRA-1536"
+    ],
+    "problems": 30,
+    "generations": 270
+  },
+  "rows": [
+    {
+      "prompt": "P0",
+      "model": "Base",
+      "total": 30,
+      "compile": 23,
+      "compile_rate": 0.766667,
+      "ac": 5,
+      "ac_rate": 0.166667,
+      "failure_distribution": {
+        "AC": 5,
+        "CE": 7,
+        "RE": 3,
+        "WA": 15
+      },
+      "difficulty": {
+        "easy": {
+          "total": 12,
+          "ac": 3
+        },
+        "medium": {
+          "total": 12,
+          "ac": 2
+        },
+        "hard": {
+          "total": 6,
+          "ac": 0
+        }
+      }
+    },
+    {
+      "prompt": "P0",
+      "model": "LoRA-512",
+      "total": 30,
+      "compile": 23,
+      "compile_rate": 0.766667,
+      "ac": 8,
+      "ac_rate": 0.266667,
+      "failure_distribution": {
+        "AC": 8,
+        "CE": 7,
+        "RE": 1,
+        "WA": 14
+      },
+      "difficulty": {
+        "easy": {
+          "total": 12,
+          "ac": 6
+        },
+        "medium": {
+          "total": 12,
+          "ac": 2
+        },
+        "hard": {
+          "total": 6,
+          "ac": 0
+        }
+      }
+    },
+    {
+      "prompt": "P0",
+      "model": "LoRA-1536",
+      "total": 30,
+      "compile": 25,
+      "compile_rate": 0.833333,
+      "ac": 7,
+      "ac_rate": 0.233333,
+      "failure_distribution": {
+        "AC": 7,
+        "CE": 5,
+        "RE": 1,
+        "WA": 17
+      },
+      "difficulty": {
+        "easy": {
+          "total": 12,
+          "ac": 5
+        },
+        "medium": {
+          "total": 12,
+          "ac": 2
+        },
+        "hard": {
+          "total": 6,
+          "ac": 0
+        }
+      }
+    },
+    {
+      "prompt": "P1",
+      "model": "Base",
+      "total": 30,
+      "compile": 21,
+      "compile_rate": 0.7,
+      "ac": 4,
+      "ac_rate": 0.133333,
+      "failure_distribution": {
+        "AC": 4,
+        "CE": 9,
+        "RE": 1,
+        "WA": 16
+      },
+      "difficulty": {
+        "easy": {
+          "total": 12,
+          "ac": 3
+        },
+        "medium": {
+          "total": 12,
+          "ac": 1
+        },
+        "hard": {
+          "total": 6,
+          "ac": 0
+        }
+      }
+    },
+    {
+      "prompt": "P1",
+      "model": "LoRA-512",
+      "total": 30,
+      "compile": 22,
+      "compile_rate": 0.733333,
+      "ac": 6,
+      "ac_rate": 0.2,
+      "failure_distribution": {
+        "AC": 6,
+        "CE": 8,
+        "RE": 1,
+        "WA": 15
+      },
+      "difficulty": {
+        "easy": {
+          "total": 12,
+          "ac": 4
+        },
+        "medium": {
+          "total": 12,
+          "ac": 2
+        },
+        "hard": {
+          "total": 6,
+          "ac": 0
+        }
+      }
+    },
+    {
+      "prompt": "P1",
+      "model": "LoRA-1536",
+      "total": 30,
+      "compile": 24,
+      "compile_rate": 0.8,
+      "ac": 7,
+      "ac_rate": 0.233333,
+      "failure_distribution": {
+        "AC": 7,
+        "CE": 6,
+        "RE": 3,
+        "WA": 14
+      },
+      "difficulty": {
+        "easy": {
+          "total": 12,
+          "ac": 4
+        },
+        "medium": {
+          "total": 12,
+          "ac": 3
+        },
+        "hard": {
+          "total": 6,
+          "ac": 0
+        }
+      }
+    },
+    {
+      "prompt": "P2",
+      "model": "Base",
+      "total": 30,
+      "compile": 24,
+      "compile_rate": 0.8,
+      "ac": 4,
+      "ac_rate": 0.133333,
+      "failure_distribution": {
+        "AC": 4,
+        "CE": 6,
+        "OLE": 1,
+        "RE": 1,
+        "WA": 18
+      },
+      "difficulty": {
+        "easy": {
+          "total": 12,
+          "ac": 2
+        },
+        "medium": {
+          "total": 12,
+          "ac": 2
+        },
+        "hard": {
+          "total": 6,
+          "ac": 0
+        }
+      }
+    },
+    {
+      "prompt": "P2",
+      "model": "LoRA-512",
+      "total": 30,
+      "compile": 24,
+      "compile_rate": 0.8,
+      "ac": 7,
+      "ac_rate": 0.233333,
+      "failure_distribution": {
+        "AC": 7,
+        "CE": 6,
+        "RE": 1,
+        "WA": 16
+      },
+      "difficulty": {
+        "easy": {
+          "total": 12,
+          "ac": 5
+        },
+        "medium": {
+          "total": 12,
+          "ac": 2
+        },
+        "hard": {
+          "total": 6,
+          "ac": 0
+        }
+      }
+    },
+    {
+      "prompt": "P2",
+      "model": "LoRA-1536",
+      "total": 30,
+      "compile": 25,
+      "compile_rate": 0.833333,
+      "ac": 7,
+      "ac_rate": 0.233333,
+      "failure_distribution": {
+        "AC": 7,
+        "CE": 5,
+        "RE": 2,
+        "WA": 16
+      },
+      "difficulty": {
+        "easy": {
+          "total": 12,
+          "ac": 5
+        },
+        "medium": {
+          "total": 12,
+          "ac": 2
+        },
+        "hard": {
+          "total": 6,
+          "ac": 0
+        }
+      }
+    }
+  ],
+  "paired": {
+    "Base": {
+      "P0_vs_P1": {
+        "gained_ac": [
+          "p008"
+        ],
+        "lost_ac": [
+          "p003",
+          "p019"
+        ],
+        "net_ac": -1,
+        "status_changes": {
+          "AC->WA": 2,
+          "CE->RE": 1,
+          "CE->WA": 3,
+          "RE->AC": 1,
+          "RE->CE": 2,
+          "WA->CE": 4
+        }
+      },
+      "P0_vs_P2": {
+        "gained_ac": [],
+        "lost_ac": [
+          "p003"
+        ],
+        "net_ac": -1,
+        "status_changes": {
+          "AC->WA": 1,
+          "CE->WA": 4,
+          "RE->CE": 2,
+          "WA->CE": 1,
+          "WA->OLE": 1
+        }
+      },
+      "P1_vs_P2": {
+        "gained_ac": [
+          "p019"
+        ],
+        "lost_ac": [
+          "p008"
+        ],
+        "net_ac": 0,
+        "status_changes": {
+          "AC->RE": 1,
+          "CE->WA": 4,
+          "RE->WA": 1,
+          "WA->AC": 1,
+          "WA->CE": 1,
+          "WA->OLE": 1
+        }
+      }
+    },
+    "LoRA-512": {
+      "P0_vs_P1": {
+        "gained_ac": [],
+        "lost_ac": [
+          "p008",
+          "p012"
+        ],
+        "net_ac": -2,
+        "status_changes": {
+          "AC->WA": 2,
+          "CE->WA": 3,
+          "WA->CE": 4
+        }
+      },
+      "P0_vs_P2": {
+        "gained_ac": [],
+        "lost_ac": [
+          "p008"
+        ],
+        "net_ac": -1,
+        "status_changes": {
+          "AC->WA": 1,
+          "CE->WA": 2,
+          "WA->CE": 1
+        }
+      },
+      "P1_vs_P2": {
+        "gained_ac": [
+          "p012"
+        ],
+        "lost_ac": [],
+        "net_ac": 1,
+        "status_changes": {
+          "CE->WA": 3,
+          "WA->AC": 1,
+          "WA->CE": 1
+        }
+      }
+    },
+    "LoRA-1536": {
+      "P0_vs_P1": {
+        "gained_ac": [
+          "p009",
+          "p014"
+        ],
+        "lost_ac": [
+          "p005",
+          "p008"
+        ],
+        "net_ac": 0,
+        "status_changes": {
+          "AC->RE": 1,
+          "AC->WA": 1,
+          "CE->AC": 1,
+          "CE->RE": 1,
+          "CE->WA": 1,
+          "WA->AC": 1,
+          "WA->CE": 4
+        }
+      },
+      "P0_vs_P2": {
+        "gained_ac": [
+          "p012"
+        ],
+        "lost_ac": [
+          "p008"
+        ],
+        "net_ac": 0,
+        "status_changes": {
+          "AC->WA": 1,
+          "RE->WA": 1,
+          "WA->AC": 1,
+          "WA->RE": 2
+        }
+      },
+      "P1_vs_P2": {
+        "gained_ac": [
+          "p005",
+          "p012"
+        ],
+        "lost_ac": [
+          "p009",
+          "p014"
+        ],
+        "net_ac": 0,
+        "status_changes": {
+          "AC->CE": 1,
+          "AC->WA": 1,
+          "CE->RE": 1,
+          "CE->WA": 3,
+          "RE->AC": 1,
+          "RE->CE": 1,
+          "RE->WA": 1,
+          "WA->AC": 1,
+          "WA->CE": 1,
+          "WA->RE": 1
+        }
+      }
+    }
+  },
+  "p0_common_failures": [
+    "p002",
+    "p004",
+    "p006",
+    "p007",
+    "p009",
+    "p011",
+    "p014",
+    "p015",
+    "p016",
+    "p017",
+    "p018",
+    "p020",
+    "p021",
+    "p022",
+    "p023",
+    "p024",
+    "p025",
+    "p026",
+    "p027",
+    "p028",
+    "p029",
+    "p030"
+  ],
+  "p0_common_failure_recovery": {
+    "P1": {
+      "Base": [],
+      "LoRA-512": [],
+      "LoRA-1536": [
+        "p009",
+        "p014"
+      ]
+    },
+    "P2": {
+      "Base": [],
+      "LoRA-512": [],
+      "LoRA-1536": []
+    }
+  },
+  "style_auxiliary": {
+    "P0": {
+      "Base": {
+        "using_namespace_std": {
+          "count": 7,
+          "rate": 0.233333
+        },
+        "maxn_maxm_constant": {
+          "count": 2,
+          "rate": 0.066667
+        },
+        "static_array": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "LoRA-512": {
+        "using_namespace_std": {
+          "count": 17,
+          "rate": 0.566667
+        },
+        "maxn_maxm_constant": {
+          "count": 6,
+          "rate": 0.2
+        },
+        "static_array": {
+          "count": 6,
+          "rate": 0.2
+        }
+      },
+      "LoRA-1536": {
+        "using_namespace_std": {
+          "count": 10,
+          "rate": 0.333333
+        },
+        "maxn_maxm_constant": {
+          "count": 5,
+          "rate": 0.166667
+        },
+        "static_array": {
+          "count": 5,
+          "rate": 0.166667
+        }
+      }
+    },
+    "P1": {
+      "Base": {
+        "using_namespace_std": {
+          "count": 8,
+          "rate": 0.266667
+        },
+        "maxn_maxm_constant": {
+          "count": 4,
+          "rate": 0.133333
+        },
+        "static_array": {
+          "count": 1,
+          "rate": 0.033333
+        }
+      },
+      "LoRA-512": {
+        "using_namespace_std": {
+          "count": 25,
+          "rate": 0.833333
+        },
+        "maxn_maxm_constant": {
+          "count": 6,
+          "rate": 0.2
+        },
+        "static_array": {
+          "count": 6,
+          "rate": 0.2
+        }
+      },
+      "LoRA-1536": {
+        "using_namespace_std": {
+          "count": 17,
+          "rate": 0.566667
+        },
+        "maxn_maxm_constant": {
+          "count": 5,
+          "rate": 0.166667
+        },
+        "static_array": {
+          "count": 5,
+          "rate": 0.166667
+        }
+      }
+    },
+    "P2": {
+      "Base": {
+        "using_namespace_std": {
+          "count": 12,
+          "rate": 0.4
+        },
+        "maxn_maxm_constant": {
+          "count": 2,
+          "rate": 0.066667
+        },
+        "static_array": {
+          "count": 0,
+          "rate": 0.0
+        }
+      },
+      "LoRA-512": {
+        "using_namespace_std": {
+          "count": 24,
+          "rate": 0.8
+        },
+        "maxn_maxm_constant": {
+          "count": 6,
+          "rate": 0.2
+        },
+        "static_array": {
+          "count": 5,
+          "rate": 0.166667
+        }
+      },
+      "LoRA-1536": {
+        "using_namespace_std": {
+          "count": 16,
+          "rate": 0.533333
+        },
+        "maxn_maxm_constant": {
+          "count": 6,
+          "rate": 0.2
+        },
+        "static_array": {
+          "count": 6,
+          "rate": 0.2
+        }
+      }
+    }
+  },
+  "aggregate_ac": {
+    "P0": 20,
+    "P1": 17,
+    "P2": 18
+  },
+  "aggregate_failure_distribution": {
+    "P0": {
+      "AC": 20,
+      "CE": 19,
+      "RE": 5,
+      "WA": 46
+    },
+    "P1": {
+      "AC": 17,
+      "CE": 23,
+      "RE": 5,
+      "WA": 45
+    },
+    "P2": {
+      "AC": 18,
+      "CE": 17,
+      "OLE": 1,
+      "RE": 4,
+      "WA": 50
+    }
+  },
+  "best_prompt": [
+    "P0"
+  ],
+  "lora_both_above_base_all_prompts": true
+}

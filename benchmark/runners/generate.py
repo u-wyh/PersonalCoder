@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -214,6 +215,7 @@ def run_generation(
     paths: ModelPaths,
     output_dir: str | Path = BENCHMARK_DIR / "outputs",
     raw_output_dir: str | Path = BENCHMARK_DIR / "raw_outputs",
+    prompt_file: str | Path = PROMPT_PATH,
 ) -> dict[str, Any]:
     """Generate and save raw/extracted outputs for all manifest problems."""
     model_name = _safe_model_name(model_name)
@@ -222,7 +224,8 @@ def run_generation(
     except EvaluationError as exc:
         raise GenerationError(str(exc)) from exc
     statements = load_statements(problems)
-    prompt_template = load_prompt_template()
+    prompt_path = Path(prompt_file).resolve()
+    prompt_template = load_prompt_template(prompt_path)
     extracted_root = Path(output_dir).resolve() / model_name
     raw_root = Path(raw_output_dir).resolve() / model_name
 
@@ -254,6 +257,8 @@ def run_generation(
         "model": model_name,
         "base_model": str(paths.base),
         "adapter": str(paths.adapter) if paths.adapter else None,
+        "prompt_file": str(prompt_path),
+        "prompt_sha256": hashlib.sha256(prompt_template.encode("utf-8")).hexdigest(),
         "problems": len(problems),
         "generation_config": GENERATION_CONFIG,
         "records": records,
@@ -267,6 +272,12 @@ def main() -> int:
     parser.add_argument("--model-path", type=Path, help="local Base model path")
     parser.add_argument("--base-model", type=Path, help="local Base path for LoRA")
     parser.add_argument("--adapter-path", type=Path, help="local LoRA adapter path")
+    parser.add_argument(
+        "--prompt-file",
+        type=Path,
+        default=PROMPT_PATH,
+        help="prompt template containing exactly one {problem} placeholder",
+    )
     parser.add_argument(
         "--output-dir",
         type=Path,
@@ -289,6 +300,7 @@ def main() -> int:
             paths=paths,
             output_dir=args.output_dir,
             raw_output_dir=args.raw_output_dir,
+            prompt_file=args.prompt_file,
         )
     except GenerationError as exc:
         parser.error(str(exc))

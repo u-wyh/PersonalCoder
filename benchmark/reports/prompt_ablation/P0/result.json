@@ -1,0 +1,25 @@
+{
+  "models": {
+    "Base": {
+      "total": 30,
+      "compile": 23,
+      "compile_rate": 0.766667,
+      "ac": 5,
+      "ac_rate": 0.166667
+    },
+    "LoRA-512": {
+      "total": 30,
+      "compile": 23,
+      "compile_rate": 0.766667,
+      "ac": 8,
+      "ac_rate": 0.266667
+    },
+    "LoRA-1536": {
+      "total": 30,
+      "compile": 25,
+      "compile_rate": 0.833333,
+      "ac": 7,
+      "ac_rate": 0.233333
+    }
+  }
+}

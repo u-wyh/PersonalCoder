@@ -1,0 +1,902 @@
+[
+  {
+    "model": "Base",
+    "problem": "p001",
+    "compile": true,
+    "ac": true,
+    "time": 0.017843,
+    "tests": 5,
+    "passed": 5,
+    "error": ""
+  },
+  {
+    "model": "Base",
+    "problem": "p002",
+    "compile": true,
+    "ac": false,
+    "time": 0.023771,
+    "tests": 8,
+    "passed": 7,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "Base",
+    "problem": "p003",
+    "compile": true,
+    "ac": false,
+    "time": 0.014361,
+    "tests": 5,
+    "passed": 1,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "Base",
+    "problem": "p004",
+    "compile": false,
+    "ac": false,
+    "time": 0.0,
+    "tests": 5,
+    "passed": 0,
+    "error": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p004.cpp: In function ‘int main()’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p004.cpp:17:5: error: ‘int晋级人数’ was not declared in this scope\n   17 |     int晋级人数 = 0;\n      |     ^~~~~~~~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p004.cpp:20:15: error: ‘晋级人数’ was not declared in this scope\n   20 |             ++晋级人数;\n      |               ^~~~~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p004.cpp:24:17: error: ‘晋级人数’ was not declared in this scope\n   24 |     std::cout <<晋级人数 << std::endl;\n      |                 ^~~~~~~~"
+  },
+  {
+    "model": "Base",
+    "problem": "p005",
+    "compile": false,
+    "ac": false,
+    "time": 0.0,
+    "tests": 5,
+    "passed": 0,
+    "error": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p005.cpp: In function ‘int main()’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p005.cpp:18:24: error: ‘accumulate’ is not a member of ‘std’\n   18 |         int sum = std::accumulate(teams[i].begin(), teams[i].end(), 0);\n      |                        ^~~~~~~~~~"
+  },
+  {
+    "model": "Base",
+    "problem": "p006",
+    "compile": true,
+    "ac": false,
+    "time": 0.015118,
+    "tests": 5,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "Base",
+    "problem": "p007",
+    "compile": true,
+    "ac": false,
+    "time": 0.014732,
+    "tests": 5,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "Base",
+    "problem": "p008",
+    "compile": true,
+    "ac": false,
+    "time": 0.054893,
+    "tests": 5,
+    "passed": 0,
+    "error": "submission: /home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p008.cpp:19: void testWrongSubtraction(): Assertion `wrongSubtraction(12345, 3) == 1234' failed."
+  },
+  {
+    "model": "Base",
+    "problem": "p009",
+    "compile": true,
+    "ac": false,
+    "time": 0.014982,
+    "tests": 5,
+    "passed": 2,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "Base",
+    "problem": "p010",
+    "compile": true,
+    "ac": true,
+    "time": 0.015218,
+    "tests": 5,
+    "passed": 5,
+    "error": ""
+  },
+  {
+    "model": "Base",
+    "problem": "p011",
+    "compile": true,
+    "ac": false,
+    "time": 0.013531,
+    "tests": 5,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "Base",
+    "problem": "p012",
+    "compile": true,
+    "ac": false,
+    "time": 0.016939,
+    "tests": 6,
+    "passed": 5,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "Base",
+    "problem": "p013",
+    "compile": true,
+    "ac": true,
+    "time": 0.011154,
+    "tests": 4,
+    "passed": 4,
+    "error": ""
+  },
+  {
+    "model": "Base",
+    "problem": "p014",
+    "compile": false,
+    "ac": false,
+    "time": 0.0,
+    "tests": 4,
+    "passed": 0,
+    "error": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p014.cpp: In constructor ‘DisjointSet::DisjointSet(int)’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p014.cpp:9:26: error: class ‘DisjointSet’ does not have any field named ‘parent’\n    9 |     DisjointSet(int n) : parent(n), rank(n, 0) {\n      |                          ^~~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p014.cpp:9:37: error: class ‘DisjointSet’ does not have any field named ‘rank’\n    9 |     DisjointSet(int n) : parent(n), rank(n, 0) {\n      |                                     ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p014.cpp:11:13: error: ‘parent’ was not declared in this scope\n   11 |             parent[i] = i;\n      |             ^~~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p014.cpp: In member function ‘int DisjointSet::find(int)’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p014.cpp:16:13: error: ‘parent’ was not declared in this scope\n   16 |         if (parent[x] != x) {\n      |             ^~~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p014.cpp:19:16: error: ‘parent’ was not declared in this scope\n   19 |         return parent[x];\n      |                ^~~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p014.cpp: In member function ‘void DisjointSet::unionSet(int, int)’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p014.cpp:28:17: error: expected unqualified-id before ‘[’ token\n   28 |         if (rank[rootX] > rank[rootY]) {\n      |                 ^\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p014.cpp:29:13: error: ‘parent’ was not declared in this scope\n   29 |             parent[rootY] = rootX;\n      |             ^~~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p014.cpp:31:13: error: ‘parent’ was not declared in this scope\n   31 |             parent[rootX] = rootY;\n      |             ^~~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p014.cpp:32:21: error: expected unqualified-id before ‘[’ token\n   32 |             if (rank[rootX] == rank[rootY]) {\n      |                     ^\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p014.cpp:33:28: error: expected initializer before ‘++’ token\n   33 |                 rank[rootY]++;\n      |                            ^~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p014.cpp:33:28: error: expected ‘;’ before ‘++’ token"
+  },
+  {
+    "model": "Base",
+    "problem": "p015",
+    "compile": true,
+    "ac": false,
+    "time": 0.028508,
+    "tests": 4,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "Base",
+    "problem": "p016",
+    "compile": false,
+    "ac": false,
+    "time": 0.0,
+    "tests": 4,
+    "passed": 0,
+    "error": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p016.cpp: In constructor ‘FenwickTree::FenwickTree(int)’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p016.cpp:8:26: error: class ‘FenwickTree’ does not have any field named ‘tree’\n    8 |     FenwickTree(int n) : tree(n + 1) {}\n      |                          ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p016.cpp: In member function ‘void FenwickTree::update(int, int)’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p016.cpp:12:20: error: ‘tree’ was not declared in this scope; did you mean ‘free’?\n   12 |         while (i < tree.size()) {\n      |                    ^~~~\n      |                    free\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p016.cpp: In member function ‘int FenwickTree::query(int)’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p016.cpp:22:20: error: ‘tree’ was not declared in this scope; did you mean ‘free’?\n   22 |             sum += tree[i];\n      |                    ^~~~\n      |                    free"
+  },
+  {
+    "model": "Base",
+    "problem": "p017",
+    "compile": true,
+    "ac": false,
+    "time": 0.010951,
+    "tests": 4,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "Base",
+    "problem": "p018",
+    "compile": true,
+    "ac": false,
+    "time": 0.01134,
+    "tests": 4,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "Base",
+    "problem": "p019",
+    "compile": true,
+    "ac": true,
+    "time": 0.014485,
+    "tests": 5,
+    "passed": 5,
+    "error": ""
+  },
+  {
+    "model": "Base",
+    "problem": "p020",
+    "compile": true,
+    "ac": false,
+    "time": 0.017626,
+    "tests": 4,
+    "passed": 1,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "Base",
+    "problem": "p021",
+    "compile": true,
+    "ac": false,
+    "time": 0.016647,
+    "tests": 5,
+    "passed": 1,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "Base",
+    "problem": "p022",
+    "compile": true,
+    "ac": false,
+    "time": 0.014278,
+    "tests": 4,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "Base",
+    "problem": "p023",
+    "compile": true,
+    "ac": false,
+    "time": 0.01186,
+    "tests": 4,
+    "passed": 1,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "Base",
+    "problem": "p024",
+    "compile": true,
+    "ac": false,
+    "time": 0.011183,
+    "tests": 4,
+    "passed": 3,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "Base",
+    "problem": "p025",
+    "compile": false,
+    "ac": false,
+    "time": 0.0,
+    "tests": 4,
+    "passed": 0,
+    "error": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p025.cpp: In function ‘int dfs(Node&, std::vector<bool>&, std::vector<int>&)’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p025.cpp:26:41: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?\n   26 |             int sum = edge.weight + dfs(graph[edge.to], visited, dp);\n      |                                         ^~~~~\n      |                                         isgraph"
+  },
+  {
+    "model": "Base",
+    "problem": "p026",
+    "compile": false,
+    "ac": false,
+    "time": 0.0,
+    "tests": 4,
+    "passed": 0,
+    "error": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p026.cpp: In function ‘int lca(int, int)’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p026.cpp:25:9: error: ‘depth’ was not declared in this scope\n   25 |     if (depth[u] < depth[v]) swap(u, v);\n      |         ^~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/Base/p026.cpp:27:13: error: ‘depth’ was not declared in this scope\n   27 |         if (depth[u] - (1 << i) >= depth[v]) {\n      |             ^~~~~"
+  },
+  {
+    "model": "Base",
+    "problem": "p027",
+    "compile": true,
+    "ac": false,
+    "time": 0.013281,
+    "tests": 4,
+    "passed": 1,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "Base",
+    "problem": "p028",
+    "compile": true,
+    "ac": false,
+    "time": 1.070801,
+    "tests": 4,
+    "passed": 0,
+    "error": "stdout/stderr size limit exceeded"
+  },
+  {
+    "model": "Base",
+    "problem": "p029",
+    "compile": true,
+    "ac": false,
+    "time": 0.01224,
+    "tests": 4,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "Base",
+    "problem": "p030",
+    "compile": true,
+    "ac": false,
+    "time": 0.032671,
+    "tests": 4,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p001",
+    "compile": true,
+    "ac": true,
+    "time": 0.016829,
+    "tests": 5,
+    "passed": 5,
+    "error": ""
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p002",
+    "compile": true,
+    "ac": false,
+    "time": 0.021826,
+    "tests": 8,
+    "passed": 6,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p003",
+    "compile": true,
+    "ac": true,
+    "time": 0.013945,
+    "tests": 5,
+    "passed": 5,
+    "error": ""
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p004",
+    "compile": true,
+    "ac": false,
+    "time": 0.013588,
+    "tests": 5,
+    "passed": 2,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p005",
+    "compile": true,
+    "ac": true,
+    "time": 0.013945,
+    "tests": 5,
+    "passed": 5,
+    "error": ""
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p006",
+    "compile": true,
+    "ac": false,
+    "time": 0.014613,
+    "tests": 5,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p007",
+    "compile": true,
+    "ac": false,
+    "time": 0.020219,
+    "tests": 5,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p008",
+    "compile": true,
+    "ac": false,
+    "time": 0.014155,
+    "tests": 5,
+    "passed": 1,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p009",
+    "compile": true,
+    "ac": false,
+    "time": 0.016017,
+    "tests": 5,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p010",
+    "compile": true,
+    "ac": true,
+    "time": 0.013991,
+    "tests": 5,
+    "passed": 5,
+    "error": ""
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p011",
+    "compile": true,
+    "ac": false,
+    "time": 0.015007,
+    "tests": 5,
+    "passed": 4,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p012",
+    "compile": true,
+    "ac": true,
+    "time": 0.020049,
+    "tests": 6,
+    "passed": 6,
+    "error": ""
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p013",
+    "compile": true,
+    "ac": true,
+    "time": 0.012056,
+    "tests": 4,
+    "passed": 4,
+    "error": ""
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p014",
+    "compile": false,
+    "ac": false,
+    "time": 0.0,
+    "tests": 4,
+    "passed": 0,
+    "error": "pt/P2/LoRA-512/p014.cpp:13:5: error: reference to ‘rank’ is ambiguous\n   13 |     rank[x] = 0;\n      |     ^~~~\nIn file included from /usr/include/c++/13/bits/move.h:37,\n                 from /usr/include/c++/13/bits/exception_ptr.h:41,\n                 from /usr/include/c++/13/exception:164,\n                 from /usr/include/c++/13/ios:41,\n                 from /usr/include/c++/13/ostream:40,\n                 from /usr/include/c++/13/iostream:41,\n                 from /home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p014.cpp:1:\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p014.cpp:9:13: note:                 ‘std::vector<int> rank’\n    9 | vector<int> rank;\n      |             ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p014.cpp: In function ‘void unionSet(int, int)’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p014.cpp:29:9: error: reference to ‘rank’ is ambiguous\n   29 |     if (rank[px] < rank[py]) {\n      |         ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p014.cpp:9:13: note:                 ‘std::vector<int> rank’\n    9 | vector<int> rank;\n      |             ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p014.cpp:29:20: error: reference to ‘rank’ is ambiguous\n   29 |     if (rank[px] < rank[py]) {\n      |                    ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p014.cpp:9:13: note:                 ‘std::vector<int> rank’\n    9 | vector<int> rank;\n      |             ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p014.cpp:33:9: error: reference to ‘rank’ is ambiguous\n   33 |     if (rank[px] == rank[py]) {\n      |         ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p014.cpp:9:13: note:                 ‘std::vector<int> rank’\n    9 | vector<int> rank;\n      |             ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p014.cpp:33:21: error: reference to ‘rank’ is ambiguous\n   33 |     if (rank[px] == rank[py]) {\n      |                     ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p014.cpp:9:13: note:                 ‘std::vector<int> rank’\n    9 | vector<int> rank;\n      |             ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p014.cpp:34:9: error: reference to ‘rank’ is ambiguous\n   34 |         rank[px]++;\n      |         ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p014.cpp:9:13: note:                 ‘std::vector<int> rank’\n    9 | vector<int> rank;\n      |             ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p014.cpp: In function ‘int main()’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p014.cpp:45:5: error: reference to ‘rank’ is ambiguous\n   45 |     rank.resize(n + 1);\n      |     ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p014.cpp:9:13: note:                 ‘std::vector<int> rank’\n    9 | vector<int> rank;\n      |             ^~~~"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p015",
+    "compile": false,
+    "ac": false,
+    "time": 0.0,
+    "tests": 4,
+    "passed": 0,
+    "error": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p015.cpp: In function ‘void dijkstra(int)’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p015.cpp:19:5: error: ‘priority_queue’ was not declared in this scope\n   19 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |     ^~~~~~~~~~~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p015.cpp:5:1: note: ‘std::priority_queue’ is defined in header ‘<queue>’; did you forget to ‘#include <queue>’?\n    4 | #include <climits>\n  +++ |+#include <queue>\n    5 | \n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p015.cpp:19:34: error: expected primary-expression before ‘,’ token\n   19 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                  ^\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p015.cpp:19:58: error: expected primary-expression before ‘,’ token\n   19 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                                          ^\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p015.cpp:19:83: error: expected primary-expression before ‘>’ token\n   19 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                                                                   ^\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p015.cpp:19:85: error: ‘pq’ was not declared in this scope\n   19 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                                                                     ^~"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p016",
+    "compile": true,
+    "ac": false,
+    "time": 0.011716,
+    "tests": 4,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p017",
+    "compile": true,
+    "ac": false,
+    "time": 0.011948,
+    "tests": 4,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p018",
+    "compile": true,
+    "ac": false,
+    "time": 0.011325,
+    "tests": 4,
+    "passed": 1,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p019",
+    "compile": true,
+    "ac": true,
+    "time": 0.014825,
+    "tests": 5,
+    "passed": 5,
+    "error": ""
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p020",
+    "compile": true,
+    "ac": false,
+    "time": 0.014231,
+    "tests": 4,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p021",
+    "compile": false,
+    "ac": false,
+    "time": 0.0,
+    "tests": 5,
+    "passed": 0,
+    "error": " >::value>::type std::swap(pair<_T1, _T2>&, pair<_T1, _T2>&)’\n  879 |     swap(pair<_T1, _T2>& __x, pair<_T1, _T2>& __y)\n      |     ^~~~\n/usr/include/c++/13/bits/stl_pair.h:879:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p021.cpp:97:26: note:   ‘MinHeap’ is not derived from ‘std::pair<_T1, _T2>’\n   97 |                 std::swap(minHeap, maxHeap);\n      |                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~\n/usr/include/c++/13/bits/stl_pair.h:896:5: note: candidate: ‘template<class _T1, class _T2> typename std::enable_if<(! std::__and_<std::__is_swappable<_T1>, std::__is_swappable<_T2> >::value)>::type std::swap(pair<_T1, _T2>&, pair<_T1, _T2>&)’ (deleted)\n  896 |     swap(pair<_T1, _T2>&, pair<_T1, _T2>&) = delete;\n      |     ^~~~\n/usr/include/c++/13/bits/stl_pair.h:896:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p021.cpp:97:26: note:   ‘MinHeap’ is not derived from ‘std::pair<_T1, _T2>’\n   97 |                 std::swap(minHeap, maxHeap);\n      |                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~\nIn file included from /usr/include/c++/13/string:54:\n/usr/include/c++/13/bits/basic_string.h:3994:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> void std::swap(__cxx11::basic_string<_CharT, _Traits, _Allocator>&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’\n 3994 |     swap(basic_string<_CharT, _Traits, _Alloc>& __lhs,\n      |     ^~~~\n/usr/include/c++/13/bits/basic_string.h:3994:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p021.cpp:97:26: note:   ‘MinHeap’ is not derived from ‘std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’\n   97 |                 std::swap(minHeap, maxHeap);\n      |                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~\nIn file included from /usr/include/c++/13/bits/memory_resource.h:47,\n                 from /usr/include/c++/13/string:58:\n/usr/include/c++/13/tuple:2183:5: note: candidate: ‘template<class ... _Elements> typename std::enable_if<std::__and_<std::__is_swappable<_Elements>...>::value>::type std::swap(tuple<_UTypes ...>&, tuple<_UTypes ...>&)’\n 2183 |     swap(tuple<_Elements...>& __x, tuple<_Elements...>& __y)\n      |     ^~~~\n/usr/include/c++/13/tuple:2183:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p021.cpp:97:26: note:   ‘MinHeap’ is not derived from ‘std::tuple<_UTypes ...>’\n   97 |                 std::swap(minHeap, maxHeap);\n      |                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~\n/usr/include/c++/13/tuple:2201:5: note: candidate: ‘template<class ... _Elements> typename std::enable_if<(! std::__and_<std::__is_swappable<_Elements>...>::value)>::type std::swap(tuple<_UTypes ...>&, tuple<_UTypes ...>&)’ (deleted)\n 2201 |     swap(tuple<_Elements...>&, tuple<_Elements...>&) = delete;\n      |     ^~~~\n/usr/include/c++/13/tuple:2201:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p021.cpp:97:26: note:   ‘MinHeap’ is not derived from ‘std::tuple<_UTypes ...>’\n   97 |                 std::swap(minHeap, maxHeap);\n      |                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~\nIn file included from /usr/include/c++/13/vector:66,\n                 from /home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p021.cpp:2:\n/usr/include/c++/13/bits/stl_vector.h:2112:5: note: candidate: ‘template<class _Tp, class _Alloc> void std::swap(vector<_Tp, _Alloc>&, vector<_Tp, _Alloc>&)’\n 2112 |     swap(vector<_Tp, _Alloc>& __x, vector<_Tp, _Alloc>& __y)\n      |     ^~~~\n/usr/include/c++/13/bits/stl_vector.h:2112:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p021.cpp:97:26: note:   ‘MinHeap’ is not derived from ‘std::vector<_Tp, _Alloc>’\n   97 |                 std::swap(minHeap, maxHeap);\n      |                 ~~~~~~~~~^~~~~~~~~~~~~~~~~~"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p022",
+    "compile": true,
+    "ac": false,
+    "time": 0.012265,
+    "tests": 4,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p023",
+    "compile": true,
+    "ac": false,
+    "time": 0.011629,
+    "tests": 4,
+    "passed": 1,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p024",
+    "compile": true,
+    "ac": false,
+    "time": 0.020184,
+    "tests": 4,
+    "passed": 3,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p025",
+    "compile": false,
+    "ac": false,
+    "time": 0.0,
+    "tests": 4,
+    "passed": 0,
+    "error": "iously declared here\n   34 | int stn;\n      |     ^~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:290:5: error: redefinition of ‘int stcnt’\n  290 | int stcnt;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:31:5: note: ‘int stcnt’ previously declared here\n   31 | int stcnt;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:292:5: error: redefinition of ‘int st [100001]’\n  292 | int st[MAXN];\n      |     ^~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:27:5: note: ‘int st [100001]’ previously declared here\n   27 | int st[MAXN];\n      |     ^~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:293:5: error: redefinition of ‘int sttop’\n  293 | int sttop;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:33:5: note: ‘int sttop’ previously declared here\n   33 | int sttop;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:294:5: error: redefinition of ‘int stn’\n  294 | int stn;\n      |     ^~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:34:5: note: ‘int stn’ previously declared here\n   34 | int stn;\n      |     ^~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:295:5: error: redefinition of ‘int stcnt’\n  295 | int stcnt;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:31:5: note: ‘int stcnt’ previously declared here\n   31 | int stcnt;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:297:5: error: redefinition of ‘int st [100001]’\n  297 | int st[MAXN];\n      |     ^~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:27:5: note: ‘int st [100001]’ previously declared here\n   27 | int st[MAXN];\n      |     ^~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:298:5: error: redefinition of ‘int sttop’\n  298 | int sttop;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:33:5: note: ‘int sttop’ previously declared here\n   33 | int sttop;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:299:5: error: redefinition of ‘int stn’\n  299 | int stn;\n      |     ^~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:34:5: note: ‘int stn’ previously declared here\n   34 | int stn;\n      |     ^~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:300:5: error: redefinition of ‘int stcnt’\n  300 | int stcnt;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:31:5: note: ‘int stcnt’ previously declared here\n   31 | int stcnt;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:302:5: error: redefinition of ‘int st [100001]’\n  302 | int st[MAXN];\n      |     ^~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:27:5: note: ‘int st [100001]’ previously declared here\n   27 | int st[MAXN];\n      |     ^~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:303:5: error: redefinition of ‘int sttop’\n  303 | int sttop;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:33:5: note: ‘int sttop’ previously declared here\n   33 | int sttop;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:304:5: error: redefinition of ‘int stn’\n  304 | int stn;\n      |     ^~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:34:5: note: ‘int stn’ previously declared here\n   34 | int stn;\n      |     ^~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:305:5: error: redefinition of ‘int stcnt’\n  305 | int stcnt;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p025.cpp:31:5: note: ‘int stcnt’ previously declared here\n   31 | int stcnt;\n      |     ^~~~~"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p026",
+    "compile": false,
+    "ac": false,
+    "time": 0.0,
+    "tests": 4,
+    "passed": 0,
+    "error": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p026.cpp:170:10: error: expected initializer at end of input\n  170 | int cnt14\n      |          ^"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p027",
+    "compile": false,
+    "ac": false,
+    "time": 0.0,
+    "tests": 4,
+    "passed": 0,
+    "error": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p027.cpp: In function ‘void dijkstra(int)’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p027.cpp:31:5: error: ‘priority_queue’ was not declared in this scope\n   31 |     priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> pq;\n      |     ^~~~~~~~~~~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p027.cpp:7:1: note: ‘std::priority_queue’ is defined in header ‘<queue>’; did you forget to ‘#include <queue>’?\n    6 | #include <cassert>\n  +++ |+#include <queue>\n    7 | \n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p027.cpp:31:40: error: expected primary-expression before ‘,’ token\n   31 |     priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> pq;\n      |                                        ^\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p027.cpp:31:70: error: expected primary-expression before ‘,’ token\n   31 |     priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> pq;\n      |                                                                      ^\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p027.cpp:31:101: error: expected primary-expression before ‘>’ token\n   31 |     priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> pq;\n      |                                                                                                     ^\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p027.cpp:31:103: error: ‘pq’ was not declared in this scope\n   31 |     priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> pq;\n      |                                                                                                       ^~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p027.cpp: In function ‘int main()’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-512/p027.cpp:60:9: error: ‘dist’ was not declared in this scope\n   60 |     if (dist[d] == INF) {\n      |         ^~~~"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p028",
+    "compile": true,
+    "ac": false,
+    "time": 0.027203,
+    "tests": 4,
+    "passed": 1,
+    "error": "double free or corruption (out)"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p029",
+    "compile": true,
+    "ac": false,
+    "time": 0.012364,
+    "tests": 4,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-512",
+    "problem": "p030",
+    "compile": true,
+    "ac": false,
+    "time": 0.011462,
+    "tests": 4,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p001",
+    "compile": true,
+    "ac": true,
+    "time": 0.01487,
+    "tests": 5,
+    "passed": 5,
+    "error": ""
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p002",
+    "compile": true,
+    "ac": false,
+    "time": 0.026771,
+    "tests": 8,
+    "passed": 6,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p003",
+    "compile": true,
+    "ac": true,
+    "time": 0.015297,
+    "tests": 5,
+    "passed": 5,
+    "error": ""
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p004",
+    "compile": true,
+    "ac": false,
+    "time": 0.014631,
+    "tests": 5,
+    "passed": 2,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p005",
+    "compile": true,
+    "ac": true,
+    "time": 0.014735,
+    "tests": 5,
+    "passed": 5,
+    "error": ""
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p006",
+    "compile": true,
+    "ac": false,
+    "time": 0.015041,
+    "tests": 5,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p007",
+    "compile": true,
+    "ac": false,
+    "time": 0.017768,
+    "tests": 5,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p008",
+    "compile": true,
+    "ac": false,
+    "time": 0.014498,
+    "tests": 5,
+    "passed": 1,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p009",
+    "compile": true,
+    "ac": false,
+    "time": 0.015732,
+    "tests": 5,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p010",
+    "compile": true,
+    "ac": true,
+    "time": 0.015048,
+    "tests": 5,
+    "passed": 5,
+    "error": ""
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p011",
+    "compile": false,
+    "ac": false,
+    "time": 0.0,
+    "tests": 5,
+    "passed": 0,
+    "error": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p011.cpp: In function ‘int main()’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p011.cpp:10:33: error: variable ‘std::istringstream iss’ has initializer but incomplete type\n   10 |     std::istringstream iss(input);\n      |                                 ^"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p012",
+    "compile": true,
+    "ac": true,
+    "time": 0.017125,
+    "tests": 6,
+    "passed": 6,
+    "error": ""
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p013",
+    "compile": true,
+    "ac": true,
+    "time": 0.011727,
+    "tests": 4,
+    "passed": 4,
+    "error": ""
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p014",
+    "compile": false,
+    "ac": false,
+    "time": 0.0,
+    "tests": 4,
+    "passed": 0,
+    "error": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p014.cpp: In function ‘void unionSet(int, int)’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p014.cpp:24:9: error: reference to ‘rank’ is ambiguous\n   24 |     if (rank[rootX] < rank[rootY]) {\n      |         ^~~~\nIn file included from /usr/include/c++/13/bits/move.h:37,\n                 from /usr/include/c++/13/bits/exception_ptr.h:41,\n                 from /usr/include/c++/13/exception:164,\n                 from /usr/include/c++/13/ios:41,\n                 from /usr/include/c++/13/ostream:40,\n                 from /usr/include/c++/13/iostream:41,\n                 from /home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p014.cpp:1:\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p014.cpp:9:13: note:                 ‘std::vector<int> rank’\n    9 | vector<int> rank(100001);\n      |             ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p014.cpp:24:23: error: reference to ‘rank’ is ambiguous\n   24 |     if (rank[rootX] < rank[rootY]) {\n      |                       ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p014.cpp:9:13: note:                 ‘std::vector<int> rank’\n    9 | vector<int> rank(100001);\n      |             ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p014.cpp:28:9: error: reference to ‘rank’ is ambiguous\n   28 |     if (rank[rootX] == rank[rootY]) {\n      |         ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p014.cpp:9:13: note:                 ‘std::vector<int> rank’\n    9 | vector<int> rank(100001);\n      |             ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p014.cpp:28:24: error: reference to ‘rank’ is ambiguous\n   28 |     if (rank[rootX] == rank[rootY]) {\n      |                        ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p014.cpp:9:13: note:                 ‘std::vector<int> rank’\n    9 | vector<int> rank(100001);\n      |             ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p014.cpp:29:9: error: reference to ‘rank’ is ambiguous\n   29 |         rank[rootX]++;\n      |         ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p014.cpp:9:13: note:                 ‘std::vector<int> rank’\n    9 | vector<int> rank(100001);\n      |             ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p014.cpp: In function ‘int main()’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p014.cpp:41:9: error: reference to ‘rank’ is ambiguous\n   41 |         rank[i] = 1;\n      |         ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p014.cpp:9:13: note:                 ‘std::vector<int> rank’\n    9 | vector<int> rank(100001);\n      |             ^~~~"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p015",
+    "compile": false,
+    "ac": false,
+    "time": 0.0,
+    "tests": 4,
+    "passed": 0,
+    "error": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p015.cpp: In function ‘void add(int, int, int)’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p015.cpp:24:5: error: reference to ‘next’ is ambiguous\n   24 |     next[cnt] = head[u];\n      |     ^~~~\nIn file included from /usr/include/c++/13/string:47,\n                 from /usr/include/c++/13/bits/locale_classes.h:40,\n                 from /usr/include/c++/13/bits/ios_base.h:41,\n                 from /usr/include/c++/13/ios:44,\n                 from /usr/include/c++/13/ostream:40,\n                 from /usr/include/c++/13/iostream:41,\n                 from /home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p015.cpp:1:\n/usr/include/c++/13/bits/stl_iterator_base_funcs.h:232:5: note: candidates are: ‘template<class _InputIterator> constexpr _InputIterator std::next(_InputIterator, typename iterator_traits<_Iter>::difference_type)’\n  232 |     next(_InputIterator __x, typename\n      |     ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p015.cpp:14:5: note:                 ‘int next [1000005]’\n   14 | int next[MAXM];\n      |     ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p015.cpp: In function ‘void dfs(int)’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p015.cpp:33:34: error: reference to ‘next’ is ambiguous\n   33 |     for (int i = head[u]; i; i = next[i]) {\n      |                                  ^~~~\n/usr/include/c++/13/bits/stl_iterator_base_funcs.h:232:5: note: candidates are: ‘template<class _InputIterator> constexpr _InputIterator std::next(_InputIterator, typename iterator_traits<_Iter>::difference_type)’\n  232 |     next(_InputIterator __x, typename\n      |     ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p015.cpp:14:5: note:                 ‘int next [1000005]’\n   14 | int next[MAXM];\n      |     ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p015.cpp: In function ‘int main()’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p015.cpp:73:42: error: reference to ‘next’ is ambiguous\n   73 |             for (int j = head[i]; j; j = next[j]) {\n      |                                          ^~~~\n/usr/include/c++/13/bits/stl_iterator_base_funcs.h:232:5: note: candidates are: ‘template<class _InputIterator> constexpr _InputIterator std::next(_InputIterator, typename iterator_traits<_Iter>::difference_type)’\n  232 |     next(_InputIterator __x, typename\n      |     ^~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p015.cpp:14:5: note:                 ‘int next [1000005]’\n   14 | int next[MAXM];\n      |     ^~~~"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p016",
+    "compile": true,
+    "ac": false,
+    "time": 0.042696,
+    "tests": 4,
+    "passed": 0,
+    "error": "process exited with code -11"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p017",
+    "compile": true,
+    "ac": false,
+    "time": 0.012206,
+    "tests": 4,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p018",
+    "compile": true,
+    "ac": false,
+    "time": 0.012287,
+    "tests": 4,
+    "passed": 1,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p019",
+    "compile": true,
+    "ac": true,
+    "time": 0.014895,
+    "tests": 5,
+    "passed": 5,
+    "error": ""
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p020",
+    "compile": true,
+    "ac": false,
+    "time": 0.012097,
+    "tests": 4,
+    "passed": 1,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p021",
+    "compile": true,
+    "ac": false,
+    "time": 0.016999,
+    "tests": 5,
+    "passed": 1,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p022",
+    "compile": true,
+    "ac": false,
+    "time": 0.012158,
+    "tests": 4,
+    "passed": 2,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p023",
+    "compile": true,
+    "ac": false,
+    "time": 0.012171,
+    "tests": 4,
+    "passed": 1,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p024",
+    "compile": true,
+    "ac": false,
+    "time": 0.012136,
+    "tests": 4,
+    "passed": 1,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p025",
+    "compile": false,
+    "ac": false,
+    "time": 0.0,
+    "tests": 4,
+    "passed": 0,
+    "error": "ap(i, i + 1);\n      |             ~~~~^~~~~~~~~~\nIn file included from /usr/include/c++/13/string:54:\n/usr/include/c++/13/bits/basic_string.h:3994:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> void std::swap(__cxx11::basic_string<_CharT, _Traits, _Allocator>&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’\n 3994 |     swap(basic_string<_CharT, _Traits, _Alloc>& __lhs,\n      |     ^~~~\n/usr/include/c++/13/bits/basic_string.h:3994:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p025.cpp:89:17: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’ and ‘int’\n   89 |             swap(i, i + 1);\n      |             ~~~~^~~~~~~~~~\nIn file included from /usr/include/c++/13/bits/memory_resource.h:47,\n                 from /usr/include/c++/13/string:58:\n/usr/include/c++/13/tuple:2183:5: note: candidate: ‘template<class ... _Elements> typename std::enable_if<std::__and_<std::__is_swappable<_Elements>...>::value>::type std::swap(tuple<_UTypes ...>&, tuple<_UTypes ...>&)’\n 2183 |     swap(tuple<_Elements...>& __x, tuple<_Elements...>& __y)\n      |     ^~~~\n/usr/include/c++/13/tuple:2183:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p025.cpp:89:17: note:   mismatched types ‘std::tuple<_UTypes ...>’ and ‘int’\n   89 |             swap(i, i + 1);\n      |             ~~~~^~~~~~~~~~\n/usr/include/c++/13/tuple:2201:5: note: candidate: ‘template<class ... _Elements> typename std::enable_if<(! std::__and_<std::__is_swappable<_Elements>...>::value)>::type std::swap(tuple<_UTypes ...>&, tuple<_UTypes ...>&)’ (deleted)\n 2201 |     swap(tuple<_Elements...>&, tuple<_Elements...>&) = delete;\n      |     ^~~~\n/usr/include/c++/13/tuple:2201:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p025.cpp:89:17: note:   mismatched types ‘std::tuple<_UTypes ...>’ and ‘int’\n   89 |             swap(i, i + 1);\n      |             ~~~~^~~~~~~~~~\nIn file included from /usr/include/c++/13/vector:66,\n                 from /home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p025.cpp:2:\n/usr/include/c++/13/bits/stl_vector.h:2112:5: note: candidate: ‘template<class _Tp, class _Alloc> void std::swap(vector<_Tp, _Alloc>&, vector<_Tp, _Alloc>&)’\n 2112 |     swap(vector<_Tp, _Alloc>& __x, vector<_Tp, _Alloc>& __y)\n      |     ^~~~\n/usr/include/c++/13/bits/stl_vector.h:2112:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p025.cpp:89:17: note:   mismatched types ‘std::vector<_Tp, _Alloc>’ and ‘int’\n   89 |             swap(i, i + 1);\n      |             ~~~~^~~~~~~~~~\nIn file included from /usr/include/c++/13/deque:66,\n                 from /usr/include/c++/13/stack:62:\n/usr/include/c++/13/bits/stl_deque.h:2366:5: note: candidate: ‘template<class _Tp, class _Alloc> void std::swap(deque<_Tp, _Alloc>&, deque<_Tp, _Alloc>&)’\n 2366 |     swap(deque<_Tp,_Alloc>& __x, deque<_Tp,_Alloc>& __y)\n      |     ^~~~\n/usr/include/c++/13/bits/stl_deque.h:2366:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p025.cpp:89:17: note:   mismatched types ‘std::deque<_Tp, _Alloc>’ and ‘int’\n   89 |             swap(i, i + 1);\n      |             ~~~~^~~~~~~~~~\n/usr/include/c++/13/bits/stl_stack.h:423:5: note: candidate: ‘template<class _Tp, class _Seq> typename std::enable_if<std::__is_swappable<_T2>::value>::type std::swap(stack<_Tp, _Seq>&, stack<_Tp, _Seq>&)’\n  423 |     swap(stack<_Tp, _Seq>& __x, stack<_Tp, _Seq>& __y)\n      |     ^~~~\n/usr/include/c++/13/bits/stl_stack.h:423:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p025.cpp:89:17: note:   mismatched types ‘std::stack<_Tp, _Seq>’ and ‘int’\n   89 |             swap(i, i + 1);\n      |             ~~~~^~~~~~~~~~"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p026",
+    "compile": true,
+    "ac": false,
+    "time": 0.012559,
+    "tests": 4,
+    "passed": 1,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p027",
+    "compile": false,
+    "ac": false,
+    "time": 0.0,
+    "tests": 4,
+    "passed": 0,
+    "error": "/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p027.cpp:26:5: error: conflicting declaration ‘int dis [100005]’\n   26 | int dis[MAXN];\n      |     ^~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p027.cpp:16:5: note: previous declaration as ‘int dis [1000005]’\n   16 | int dis[MAXM];\n      |     ^~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p027.cpp: In function ‘void spfa(int)’:\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p027.cpp:33:5: error: ‘queue’ was not declared in this scope\n   33 |     queue<int> q;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p027.cpp:5:1: note: ‘std::queue’ is defined in header ‘<queue>’; did you forget to ‘#include <queue>’?\n    4 | #include <climits>\n  +++ |+#include <queue>\n    5 | \n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p027.cpp:33:11: error: expected primary-expression before ‘int’\n   33 |     queue<int> q;\n      |           ^~~\n/home/wyh15/PersonalCoder/benchmark/ablation/prompt/P2/LoRA-1536/p027.cpp:34:5: error: ‘q’ was not declared in this scope\n   34 |     q.push(s);\n      |     ^"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p028",
+    "compile": true,
+    "ac": false,
+    "time": 0.026511,
+    "tests": 4,
+    "passed": 0,
+    "error": "double free or corruption (out)"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p029",
+    "compile": true,
+    "ac": false,
+    "time": 0.012097,
+    "tests": 4,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  },
+  {
+    "model": "LoRA-1536",
+    "problem": "p030",
+    "compile": true,
+    "ac": false,
+    "time": 0.011494,
+    "tests": 4,
+    "passed": 0,
+    "error": "output differs from expected (token checker)"
+  }
+]

@@ -15,7 +15,10 @@ benchmark/reports/*
 !benchmark/reports/pilot_v1/**
 !benchmark/reports/pilot_v1_1/
 !benchmark/reports/pilot_v1_1/**
+!benchmark/reports/prompt_ablation/
+!benchmark/reports/prompt_ablation/**
 benchmark/raw_outputs/
+benchmark/ablation/
 .venv/
 __pycache__/
 *.pyc
