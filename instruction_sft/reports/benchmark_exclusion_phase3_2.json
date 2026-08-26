@@ -1,0 +1,15 @@
+{
+  "policy": {
+    "held_out_problems": 30,
+    "checks": [
+      "problem_id",
+      "sha256",
+      "code_similarity",
+      "statement_similarity"
+    ],
+    "similarity_threshold": 0.8,
+    "action": "exclude"
+  },
+  "excluded_count": 0,
+  "excluded": []
+}

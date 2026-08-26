@@ -1,28 +1,40 @@
 {
-  "raw_codes": 3261,
-  "identified_codes": 2652,
-  "unique_identified_problems": 2127,
-  "real_statements": 0,
-  "benchmark_excluded": 14,
-  "benchmark_excluded_eligible_solutions": 5,
-  "compile_pass": 2070,
-  "compile_fail": 51,
-  "compile_timeout": 0,
-  "final_pairs": 0,
-  "train": 0,
-  "validation": 0,
-  "source_distribution": {},
-  "age_distribution": {},
-  "response_token_distribution": {
-    "count": 0,
-    "min": 0,
-    "median": 0,
-    "p90": 0,
-    "max": 0,
-    "mean": 0.0
+  "eligible_selected_codes": 1849,
+  "locatable_statements": 1848,
+  "fetch_attempted": 1848,
+  "fetch_success": 1847,
+  "fetch_success_rate": 0.999459,
+  "verified_statements": 1811,
+  "statement_verification_rate": 0.979978,
+  "manual_required": 37,
+  "benchmark_excluded": 0,
+  "pair_build_missing": 0,
+  "final_pairs": 1811,
+  "train": 1630,
+  "validation": 181,
+  "source_distribution": {
+    "codeforces": 80,
+    "luogu": 1731
   },
-  "missing_statement_problems": 1849,
+  "statement_character_distribution": {
+    "count": 1811,
+    "min": 284,
+    "median": 977,
+    "p90": 2116,
+    "max": 22766,
+    "mean": 1190.65
+  },
+  "response_token_distribution": {
+    "count": 1811,
+    "min": 73,
+    "median": 591,
+    "p90": 1239,
+    "max": 10096,
+    "mean": 690.03
+  },
   "training_threshold": ">=500",
-  "threshold_met": false,
-  "recommendation": "do_not_train_collect_real_statements_and_problem_mappings"
+  "threshold_met": true,
+  "recommendation": "ready_for_phase3_3_instruction_sft",
+  "tokenizer_path": "/data/PersonalCoder/model",
+  "split_seed": 42
 }

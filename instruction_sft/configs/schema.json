@@ -15,6 +15,7 @@
     "timestamp",
     "age_bucket",
     "verified",
+    "statement_verified",
     "verification_level",
     "response_token_length"
   ],
@@ -30,6 +31,7 @@
     "timestamp": {"type": ["string", "null"]},
     "age_bucket": {"type": "string"},
     "verified": {"type": "boolean"},
+    "statement_verified": {"const": true},
     "verification_level": {"const": "local_cpp17_compile_only"},
     "response_token_length": {"type": "integer", "minimum": 1}
   }

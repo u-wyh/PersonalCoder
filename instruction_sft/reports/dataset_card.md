@@ -1,34 +1,34 @@
 # PersonalCoder Instruction SFT Dataset v1
 
-Local-only dataset audit; no statement was generated from code and no website was crawled.
+Real public problem statements paired with the user's compile-passed historical solutions. No statement is synthesized or rewritten.
 
 | Metric | Count |
 | --- | ---: |
-| Deduplicated historical code | 3261 |
-| Codes with problem ID | 2652 |
-| Unique identified problems | 2127 |
-| Reliable local statements | 0 |
-| Benchmark-contaminated code excluded | 14 |
-| C++17 compile pass | 2070 |
-| C++17 compile fail | 51 |
-| C++17 compile timeout | 0 |
-| Final instruction-response pairs | 0 |
-| Train / validation | 0 / 0 |
+| Eligible selected codes | 1849 |
+| Locatable statements | 1848 |
+| Fetch success | 1847 / 1848 |
+| Verified statements | 1811 |
+| Manual review required / excluded | 37 |
+| Benchmark contamination excluded | 0 |
+| Final instruction-response pairs | 1811 |
+| Train / validation | 1630 / 181 |
 
-## Distributions
+## Provenance and validation
 
-- Sources: {}
-- Age buckets: {}
-- Response tokens: {'count': 0, 'min': 0, 'median': 0, 'p90': 0, 'max': 0, 'mean': 0.0}
+- Statements were acquired from public Codeforces/Codeforces Gym and Luogu problem pages with a low-rate, resumable cache.
+- A deterministic 100-problem pilot passed the expansion gate; ten pilot pairs were manually checked against their code.
+- Failed, short, incomplete, ID-mismatched, login/challenge, or error pages are excluded rather than repaired synthetically.
+- Every response was already SHA256-deduplicated and passed local `g++ -std=c++17 -O2 -pipe -fsyntax-only` selection in Phase 3.1.
+- Held-out benchmark contamination is checked by source/problem ID, SHA256, code similarity, and statement similarity.
+- Train/validation is a deterministic 90/10 problem-level split with seed 42 and no problem-ID overlap.
+- Raw page caches and normalized per-problem Markdown are local ignored artifacts; the committed JSONL preserves the full verified instruction text.
 
-## Selection and leakage policy
+## Distribution
 
-- One compile-passed response per `(source, problem_id)`, ranked by recency, current style, then completeness.
-- The audited 30-problem Benchmark is excluded by ID, SHA256, path-derived ID, code similarity, and statement similarity.
-- Splits are deterministic by problem ID; no problem ID can cross train/validation.
-- `verified=true` means local C++17 compilation only; no offline tests or official OJ AC status were available.
+- Source: `{"codeforces": 80, "luogu": 1731}`
+- Statement characters: `{"count": 1811, "min": 284, "median": 977, "p90": 2116, "max": 22766, "mean": 1190.65}`
+- Response tokens: `{"count": 1811, "min": 73, "median": 591, "p90": 1239, "max": 10096, "mean": 690.03}`
 
-## Decision
+## Training decision
 
-- Threshold met: False
-- Recommendation: `do_not_train_collect_real_statements_and_problem_mappings`
+Threshold `>=500` met: **true**. Recommendation: `ready_for_phase3_3_instruction_sft`. This phase does not train a model.

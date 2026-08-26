@@ -1,0 +1,60 @@
+{
+  "eligible_total": 1849,
+  "uniquely_locatable_total": 1848,
+  "unlocatable_total": 1,
+  "inventory": {
+    "luogu": {
+      "eligible_problems": 1768,
+      "uniquely_locatable": 1768,
+      "unlocatable": 0
+    },
+    "codeforces": {
+      "eligible_problems": 81,
+      "uniquely_locatable": 80,
+      "unlocatable": 1
+    },
+    "icpc": {
+      "eligible_problems": 0,
+      "uniquely_locatable": 0,
+      "unlocatable": 0
+    },
+    "atcoder": {
+      "eligible_problems": 0,
+      "uniquely_locatable": 0,
+      "unlocatable": 0
+    },
+    "nowcoder": {
+      "eligible_problems": 0,
+      "uniquely_locatable": 0,
+      "unlocatable": 0
+    },
+    "hdu": {
+      "eligible_problems": 0,
+      "uniquely_locatable": 0,
+      "unlocatable": 0
+    },
+    "poj": {
+      "eligible_problems": 0,
+      "uniquely_locatable": 0,
+      "unlocatable": 0
+    },
+    "other": {
+      "eligible_problems": 0,
+      "uniquely_locatable": 0,
+      "unlocatable": 0
+    },
+    "unknown": {
+      "eligible_problems": 0,
+      "uniquely_locatable": 0,
+      "unlocatable": 0
+    }
+  },
+  "pilot": {
+    "size": 100,
+    "selection": "deterministic source-stratified; no difficulty/model filtering",
+    "source_distribution": {
+      "codeforces": 50,
+      "luogu": 50
+    }
+  }
+}

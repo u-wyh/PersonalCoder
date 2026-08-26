@@ -1,0 +1,521 @@
+[
+  {
+    "source": "luogu",
+    "problem_id": "P10095",
+    "url": "https://www.luogu.com.cn/problem/P10095",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P10095.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P10095.md",
+    "statement_length": 43,
+    "normalized_length": 697,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P10414",
+    "url": "https://www.luogu.com.cn/problem/P10414",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P10414.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P10414.md",
+    "statement_length": 183,
+    "normalized_length": 246,
+    "sample_count": 0,
+    "statement_verified": false,
+    "errors": [
+      "missing_input",
+      "missing_output"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P10480",
+    "url": "https://www.luogu.com.cn/problem/P10480",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P10480.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P10480.md",
+    "statement_length": 45,
+    "normalized_length": 353,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P10982",
+    "url": "https://www.luogu.com.cn/problem/P10982",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P10982.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P10982.md",
+    "statement_length": 21,
+    "normalized_length": 292,
+    "sample_count": 2,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P11294",
+    "url": "https://www.luogu.com.cn/problem/P11294",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P11294.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P11294.md",
+    "statement_length": 22,
+    "normalized_length": 959,
+    "sample_count": 2,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P1168",
+    "url": "https://www.luogu.com.cn/problem/P1168",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P1168.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P1168.md",
+    "statement_length": 35,
+    "normalized_length": 465,
+    "sample_count": 2,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P12364",
+    "url": "https://www.luogu.com.cn/problem/P12364",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P12364.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P12364.md",
+    "statement_length": 1216,
+    "normalized_length": 1360,
+    "sample_count": 0,
+    "statement_verified": false,
+    "errors": [
+      "missing_input"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P1305",
+    "url": "https://www.luogu.com.cn/problem/P1305",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P1305.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P1305.md",
+    "statement_length": 16,
+    "normalized_length": 260,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P13984",
+    "url": "https://www.luogu.com.cn/problem/P13984",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P13984.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P13984.md",
+    "statement_length": 40,
+    "normalized_length": 527,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P1496",
+    "url": "https://www.luogu.com.cn/problem/P1496",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P1496.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P1496.md",
+    "statement_length": 29,
+    "normalized_length": 351,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P1591",
+    "url": "https://www.luogu.com.cn/problem/P1591",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P1591.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P1591.md",
+    "statement_length": 18,
+    "normalized_length": 232,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P1919",
+    "url": "https://www.luogu.com.cn/problem/P1919",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P1919.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P1919.md",
+    "statement_length": 29,
+    "normalized_length": 320,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P2398",
+    "url": "https://www.luogu.com.cn/problem/P2398",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P2398.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P2398.md",
+    "statement_length": 43,
+    "normalized_length": 279,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P2578",
+    "url": "https://www.luogu.com.cn/problem/P2578",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P2578.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P2578.md",
+    "statement_length": 49,
+    "normalized_length": 513,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P2632",
+    "url": "https://www.luogu.com.cn/problem/P2632",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P2632.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P2632.md",
+    "statement_length": 42,
+    "normalized_length": 609,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P2814",
+    "url": "https://www.luogu.com.cn/problem/P2814",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P2814.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P2814.md",
+    "statement_length": 28,
+    "normalized_length": 610,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P2846",
+    "url": "https://www.luogu.com.cn/problem/P2846",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P2846.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P2846.md",
+    "statement_length": 220,
+    "normalized_length": 1072,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "missing_output"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P2863",
+    "url": "https://www.luogu.com.cn/problem/P2863",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P2863.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P2863.md",
+    "statement_length": 46,
+    "normalized_length": 390,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P3048",
+    "url": "https://www.luogu.com.cn/problem/P3048",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P3048.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P3048.md",
+    "statement_length": 551,
+    "normalized_length": 729,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "missing_output"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P32242",
+    "url": "https://www.luogu.com.cn/problem/P32242",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P32242.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P32242.md",
+    "statement_length": 0,
+    "normalized_length": 0,
+    "sample_count": 0,
+    "statement_verified": false,
+    "errors": [
+      "fetch_failed:HTTP 404"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P3376",
+    "url": "https://www.luogu.com.cn/problem/P3376",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P3376.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P3376.md",
+    "statement_length": 29,
+    "normalized_length": 729,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P3390",
+    "url": "https://www.luogu.com.cn/problem/P3390",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P3390.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P3390.md",
+    "statement_length": 31,
+    "normalized_length": 534,
+    "sample_count": 2,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P3512",
+    "url": "https://www.luogu.com.cn/problem/P3512",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P3512.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P3512.md",
+    "statement_length": 49,
+    "normalized_length": 469,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P3806",
+    "url": "https://www.luogu.com.cn/problem/P3806",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P3806.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P3806.md",
+    "statement_length": 35,
+    "normalized_length": 630,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P3855",
+    "url": "https://www.luogu.com.cn/problem/P3855",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P3855.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P3855.md",
+    "statement_length": 38,
+    "normalized_length": 442,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P3865",
+    "url": "https://www.luogu.com.cn/problem/P3865",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P3865.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P3865.md",
+    "statement_length": 46,
+    "normalized_length": 574,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P4149",
+    "url": "https://www.luogu.com.cn/problem/P4149",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P4149.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P4149.md",
+    "statement_length": 37,
+    "normalized_length": 431,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P4178",
+    "url": "https://www.luogu.com.cn/problem/P4178",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P4178.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P4178.md",
+    "statement_length": 45,
+    "normalized_length": 452,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P4305",
+    "url": "https://www.luogu.com.cn/problem/P4305",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P4305.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P4305.md",
+    "statement_length": 32,
+    "normalized_length": 515,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P4780",
+    "url": "https://www.luogu.com.cn/problem/P4780",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P4780.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P4780.md",
+    "statement_length": 30,
+    "normalized_length": 192,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P4783",
+    "url": "https://www.luogu.com.cn/problem/P4783",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P4783.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P4783.md",
+    "statement_length": 42,
+    "normalized_length": 624,
+    "sample_count": 2,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P5046",
+    "url": "https://www.luogu.com.cn/problem/P5046",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P5046.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P5046.md",
+    "statement_length": 46,
+    "normalized_length": 420,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P5047",
+    "url": "https://www.luogu.com.cn/problem/P5047",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P5047.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P5047.md",
+    "statement_length": 41,
+    "normalized_length": 384,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P5048",
+    "url": "https://www.luogu.com.cn/problem/P5048",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P5048.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P5048.md",
+    "statement_length": 49,
+    "normalized_length": 456,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P5091",
+    "url": "https://www.luogu.com.cn/problem/P5091",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P5091.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P5091.md",
+    "statement_length": 35,
+    "normalized_length": 444,
+    "sample_count": 2,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P5490",
+    "url": "https://www.luogu.com.cn/problem/P5490",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P5490.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P5490.md",
+    "statement_length": 23,
+    "normalized_length": 512,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  },
+  {
+    "source": "luogu",
+    "problem_id": "P5546",
+    "url": "https://www.luogu.com.cn/problem/P5546",
+    "raw_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/raw/luogu/P5546.json",
+    "normalized_path": "/home/wyh15/PersonalCoder/instruction_sft/data/statements/normalized/luogu/P5546.md",
+    "statement_length": 29,
+    "normalized_length": 261,
+    "sample_count": 1,
+    "statement_verified": false,
+    "errors": [
+      "statement_too_short"
+    ]
+  }
+]

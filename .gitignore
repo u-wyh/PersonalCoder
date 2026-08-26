@@ -19,6 +19,8 @@ benchmark/reports/*
 !benchmark/reports/prompt_ablation/**
 benchmark/raw_outputs/
 benchmark/ablation/
+instruction_sft/data/statements/raw/
+instruction_sft/data/statements/normalized/
 .venv/
 __pycache__/
 *.pyc
