@@ -1,0 +1,28 @@
+{
+  "raw_codes": 3261,
+  "identified_codes": 2652,
+  "unique_identified_problems": 2127,
+  "real_statements": 0,
+  "benchmark_excluded": 14,
+  "benchmark_excluded_eligible_solutions": 5,
+  "compile_pass": 2070,
+  "compile_fail": 51,
+  "compile_timeout": 0,
+  "final_pairs": 0,
+  "train": 0,
+  "validation": 0,
+  "source_distribution": {},
+  "age_distribution": {},
+  "response_token_distribution": {
+    "count": 0,
+    "min": 0,
+    "median": 0,
+    "p90": 0,
+    "max": 0,
+    "mean": 0.0
+  },
+  "missing_statement_problems": 1849,
+  "training_threshold": ">=500",
+  "threshold_met": false,
+  "recommendation": "do_not_train_collect_real_statements_and_problem_mappings"
+}

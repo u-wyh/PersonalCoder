@@ -1,0 +1,250 @@
+{
+  "policy": {
+    "held_out_problems": 30,
+    "similarity_threshold": 0.8,
+    "checks": [
+      "problem_id",
+      "path-derived problem_id",
+      "SHA256",
+      "code_similarity",
+      "statement_similarity"
+    ],
+    "action": "exclude"
+  },
+  "excluded_count": 14,
+  "excluded_eligible_solution_count": 5,
+  "matched_benchmark_problems": [
+    "p013",
+    "p015",
+    "p016",
+    "p017",
+    "p025",
+    "p026"
+  ],
+  "excluded": [
+    {
+      "path": "templates/03_字符串/KMP/KMP算法——模板.cpp",
+      "sha256": "adeac01d85edc2afe159f5b856b260f8bd023092223f2196e531dbf993a315bc",
+      "source": "luogu",
+      "problem_id": "P3375",
+      "matches": [
+        {
+          "benchmark_problem": "p017",
+          "reasons": [
+            "problem_id"
+          ],
+          "code_similarity": 0.027663,
+          "statement_similarity": 0.0
+        }
+      ]
+    },
+    {
+      "path": "templates/01_图论/tarjan/强连通分量/强连通分量——动态规划.cpp",
+      "sha256": "702aeaece7f2d5d09916629760a9f4a97f8eaffbe2e7a6225a7b173e051d1ca2",
+      "source": "luogu",
+      "problem_id": "P3387",
+      "matches": [
+        {
+          "benchmark_problem": "p025",
+          "reasons": [
+            "problem_id"
+          ],
+          "code_similarity": 0.071891,
+          "statement_similarity": 0.0
+        }
+      ]
+    },
+    {
+      "path": "templates/01_图论/tarjan/tarjan——LCA模板.cpp",
+      "sha256": "67e1ee5fddbf37853d867cd0dfaefa574fab3009c758b1d88fbb052dec87834a",
+      "source": "luogu",
+      "problem_id": "P3379",
+      "matches": [
+        {
+          "benchmark_problem": "p026",
+          "reasons": [
+            "problem_id"
+          ],
+          "code_similarity": 0.033812,
+          "statement_similarity": 0.0
+        }
+      ]
+    },
+    {
+      "path": "洛谷/code/P3371.cpp",
+      "sha256": "3de0004e724d514e388e3ceebd2d4f102b50f1823ef7143b868fe593a4025405",
+      "source": "luogu",
+      "problem_id": "P3371",
+      "matches": [
+        {
+          "benchmark_problem": "p015",
+          "reasons": [
+            "problem_id"
+          ],
+          "code_similarity": 0.084672,
+          "statement_similarity": 0.0
+        }
+      ]
+    },
+    {
+      "path": "templates/02_树上问题/优化求LCA/优化LCA——dfn序.cpp",
+      "sha256": "004d829ab30d0914489e9af4c505401761c945e871cc85c155f5c73733793f33",
+      "source": "luogu",
+      "problem_id": "P3379",
+      "matches": [
+        {
+          "benchmark_problem": "p026",
+          "reasons": [
+            "problem_id"
+          ],
+          "code_similarity": 0.022099,
+          "statement_similarity": 0.0
+        }
+      ]
+    },
+    {
+      "path": "templates/04_数据结构/树状数组/树状数组——范围查询单点增加.cpp",
+      "sha256": "78416af0603d6bc06173706585c056844e2b7f586875f1f3072665a82cf01df2",
+      "source": "luogu",
+      "problem_id": "P3374",
+      "matches": [
+        {
+          "benchmark_problem": "p016",
+          "reasons": [
+            "problem_id"
+          ],
+          "code_similarity": 0.052941,
+          "statement_similarity": 0.0
+        }
+      ]
+    },
+    {
+      "path": "templates/03_字符串/KMP/KMP算法——1based.cpp",
+      "sha256": "9d8f1cc34aa0a70635c79969351145506150ab6bbb3f08ef932e7b1ede34548b",
+      "source": "luogu",
+      "problem_id": "P3375",
+      "matches": [
+        {
+          "benchmark_problem": "p017",
+          "reasons": [
+            "problem_id"
+          ],
+          "code_similarity": 0.055031,
+          "statement_similarity": 0.0
+        }
+      ]
+    },
+    {
+      "path": "洛谷/code/P3387.cpp",
+      "sha256": "7bc7deccf018b444568ba8d36c2531e84a56283eacdd971dadfc805f2d8c0dbf",
+      "source": "luogu",
+      "problem_id": "P3387",
+      "matches": [
+        {
+          "benchmark_problem": "p025",
+          "reasons": [
+            "problem_id"
+          ],
+          "code_similarity": 0.063667,
+          "statement_similarity": 0.0
+        }
+      ]
+    },
+    {
+      "path": "templates/02_树上问题/树链剖分/树链剖分——LCA.cpp",
+      "sha256": "2ca753322c19555977e6350b877e0005b6f5f2acec4a9c8f28c8006ce9a7cdcb",
+      "source": "luogu",
+      "problem_id": "P3379",
+      "matches": [
+        {
+          "benchmark_problem": "p026",
+          "reasons": [
+            "problem_id"
+          ],
+          "code_similarity": 0.072897,
+          "statement_similarity": 0.0
+        }
+      ]
+    },
+    {
+      "path": "洛谷/code/P3375.cpp",
+      "sha256": "246470533d72141d4c8ead05b3dfcf108f3a01a390547d32bf2d3bb149b9b85c",
+      "source": "luogu",
+      "problem_id": "P3375",
+      "matches": [
+        {
+          "benchmark_problem": "p017",
+          "reasons": [
+            "problem_id"
+          ],
+          "code_similarity": 0.039249,
+          "statement_similarity": 0.0
+        }
+      ]
+    },
+    {
+      "path": "templates/03_字符串/KMP/KMP算法——next数组优化.cpp",
+      "sha256": "d9fe19a5ef31e85a9dfdbd1fb421ab42119daf594286c39830b856dff2148e93",
+      "source": "luogu",
+      "problem_id": "P3375",
+      "matches": [
+        {
+          "benchmark_problem": "p017",
+          "reasons": [
+            "problem_id"
+          ],
+          "code_similarity": 0.035763,
+          "statement_similarity": 0.0
+        }
+      ]
+    },
+    {
+      "path": "templates/02_树上问题/优化求LCA/优化LCA——欧拉序.cpp",
+      "sha256": "5fc95277585257c111ad8680c5e10a79f08e6778f2afeeb11cd64be8eb33f91c",
+      "source": "luogu",
+      "problem_id": "P3379",
+      "matches": [
+        {
+          "benchmark_problem": "p026",
+          "reasons": [
+            "problem_id"
+          ],
+          "code_similarity": 0.020376,
+          "statement_similarity": 0.0
+        }
+      ]
+    },
+    {
+      "path": "洛谷/code/P1177.cpp",
+      "sha256": "ae7673f62f83a8313c13f843afced260a9d22bb4eebe0ea9457241cdf4b38c34",
+      "source": "luogu",
+      "problem_id": "P1177",
+      "matches": [
+        {
+          "benchmark_problem": "p013",
+          "reasons": [
+            "problem_id"
+          ],
+          "code_similarity": 0.095745,
+          "statement_similarity": 0.0
+        }
+      ]
+    },
+    {
+      "path": "洛谷/code/P3375_4.cpp",
+      "sha256": "012b1ecf08ab35df8a7d6479c9b14e45dcc0959d58334f62996bb55587424ef0",
+      "source": "luogu",
+      "problem_id": "P3375",
+      "matches": [
+        {
+          "benchmark_problem": "p017",
+          "reasons": [
+            "problem_id"
+          ],
+          "code_similarity": 0.099537,
+          "statement_similarity": 0.0
+        }
+      ]
+    }
+  ]
+}

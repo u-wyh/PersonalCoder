@@ -1,0 +1,19 @@
+{
+  "version": "instruction_sft_v1",
+  "seed": 42,
+  "source_root": "/mnt/d/algorithm",
+  "benchmark_manifest": "benchmark/manifest.jsonl",
+  "compile": {
+    "command": "g++ -std=c++17 -O2 -pipe -fsyntax-only",
+    "timeout_seconds": 20,
+    "jobs": 4
+  },
+  "contamination_similarity_threshold": 0.8,
+  "split": {
+    "unit": "problem_id",
+    "train": 0.9,
+    "validation": 0.1
+  },
+  "network_access": false,
+  "synthetic_statements": false
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PersonalCoder Instruction SFT v1 sample",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "source",
+    "problem_id",
+    "instruction",
+    "response",
+    "code_sha256",
+    "origin_path",
+    "statement_path",
+    "timestamp",
+    "age_bucket",
+    "verified",
+    "verification_level",
+    "response_token_length"
+  ],
+  "properties": {
+    "id": {"type": "string", "minLength": 1},
+    "source": {"enum": ["luogu", "codeforces", "icpc"]},
+    "problem_id": {"type": "string", "minLength": 1},
+    "instruction": {"type": "string", "minLength": 1},
+    "response": {"type": "string", "minLength": 1},
+    "code_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "origin_path": {"type": "string", "minLength": 1},
+    "statement_path": {"type": "string", "minLength": 1},
+    "timestamp": {"type": ["string", "null"]},
+    "age_bucket": {"type": "string"},
+    "verified": {"type": "boolean"},
+    "verification_level": {"const": "local_cpp17_compile_only"},
+    "response_token_length": {"type": "integer", "minimum": 1}
+  }
+}
