@@ -1,0 +1,1414 @@
+{
+  "metadata": {
+    "details": "/home/wyh15/PersonalCoder/benchmark/reports/details.json",
+    "manifest": "/home/wyh15/PersonalCoder/benchmark/manifest.jsonl",
+    "outputs": "/home/wyh15/PersonalCoder/benchmark/outputs",
+    "models": [
+      "Base",
+      "LoRA-512",
+      "LoRA-1536"
+    ],
+    "problems": 30,
+    "classification_unit": "one submission; testcase statuses retained separately",
+    "wa_category_default": "unknown"
+  },
+  "models": {
+    "Base": {
+      "total": 30,
+      "failure_distribution": {
+        "accepted": 5,
+        "compile_error": 7,
+        "runtime_error": 5,
+        "wrong_answer": 13
+      },
+      "compile_error_distribution": {
+        "missing_symbol": 2,
+        "syntax_error": 1,
+        "template_error": 2,
+        "undeclared_identifier": 2
+      },
+      "testcase_status_distribution": {
+        "accepted": 29,
+        "runtime_error": 12,
+        "wrong_answer": 42
+      },
+      "problems": [
+        {
+          "problem": "p001",
+          "difficulty": "easy",
+          "status": "accepted",
+          "compile": true,
+          "ac": true,
+          "tests": 5,
+          "passed": 5,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "",
+          "case_status_counts": {
+            "accepted": 5
+          }
+        },
+        {
+          "problem": "p002",
+          "difficulty": "easy",
+          "status": "accepted",
+          "compile": true,
+          "ac": true,
+          "tests": 5,
+          "passed": 5,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "",
+          "case_status_counts": {
+            "accepted": 5
+          }
+        },
+        {
+          "problem": "p003",
+          "difficulty": "easy",
+          "status": "accepted",
+          "compile": true,
+          "ac": true,
+          "tests": 5,
+          "passed": 5,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "",
+          "case_status_counts": {
+            "accepted": 5
+          }
+        },
+        {
+          "problem": "p004",
+          "difficulty": "easy",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": "undeclared_identifier",
+          "wa_category": null,
+          "error": "/home/wyh15/PersonalCoder/benchmark/outputs/Base/p004.cpp: In function ‘int main()’:\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p004.cpp:17:5: error: ‘int晋级人数’ was not declared in this scope\n   17 |     int晋级人数 = 0;\n      |     ^~~~~~~~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p004.cpp:20:15: error: ‘晋级人数’ was not declared in this scope\n   20 |             ++晋级人数;\n      |               ^~~~~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p004.cpp:24:17: error: ‘晋级人数’ was not declared in this scope\n   24 |     std::cout <<晋级人数 << std::endl;\n      |                 ^~~~~~~~",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p005",
+          "difficulty": "easy",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": "missing_symbol",
+          "wa_category": null,
+          "error": "/home/wyh15/PersonalCoder/benchmark/outputs/Base/p005.cpp: In function ‘int main()’:\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p005.cpp:18:24: error: ‘accumulate’ is not a member of ‘std’\n   18 |         int sum = std::accumulate(team[i].begin(), team[i].end(), 0);\n      |                        ^~~~~~~~~~",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p006",
+          "difficulty": "easy",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": "syntax_error",
+          "wa_category": null,
+          "error": "/home/wyh15/PersonalCoder/benchmark/outputs/Base/p006.cpp: In function ‘int main()’:\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p006.cpp:140:43: error: expected ‘}’ at end of input\n  140 |     std::cout << \"x = \" << x << std::endl;\n      |                                           ^\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p006.cpp:3:12: note: to match this ‘{’\n    3 | int main() {\n      |            ^",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p007",
+          "difficulty": "easy",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": "template_error",
+          "wa_category": null,
+          "error": ">&, pair<_T1, _T2>&)’\n  879 |     swap(pair<_T1, _T2>& __x, pair<_T1, _T2>& __y)\n      |     ^~~~\n/usr/include/c++/13/bits/stl_pair.h:879:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p007.cpp:40:18: note:   mismatched types ‘std::pair<_T1, _T2>’ and ‘const __gnu_cxx::__alloc_traits<std::allocator<char>, char>::value_type’ {aka ‘const char’}\n   40 |         std::swap(expr[start], expr[i]);\n      |         ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~\n/usr/include/c++/13/bits/stl_pair.h:896:5: note: candidate: ‘template<class _T1, class _T2> typename std::enable_if<(! std::__and_<std::__is_swappable<_T1>, std::__is_swappable<_T2> >::value)>::type std::swap(pair<_T1, _T2>&, pair<_T1, _T2>&)’ (deleted)\n  896 |     swap(pair<_T1, _T2>&, pair<_T1, _T2>&) = delete;\n      |     ^~~~\n/usr/include/c++/13/bits/stl_pair.h:896:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p007.cpp:40:18: note:   mismatched types ‘std::pair<_T1, _T2>’ and ‘const __gnu_cxx::__alloc_traits<std::allocator<char>, char>::value_type’ {aka ‘const char’}\n   40 |         std::swap(expr[start], expr[i]);\n      |         ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~\n/usr/include/c++/13/bits/basic_string.h:3994:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> void std::swap(__cxx11::basic_string<_CharT, _Traits, _Allocator>&, __cxx11::basic_string<_CharT, _Traits, _Allocator>&)’\n 3994 |     swap(basic_string<_CharT, _Traits, _Alloc>& __lhs,\n      |     ^~~~\n/usr/include/c++/13/bits/basic_string.h:3994:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p007.cpp:40:18: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’ and ‘const __gnu_cxx::__alloc_traits<std::allocator<char>, char>::value_type’ {aka ‘const char’}\n   40 |         std::swap(expr[start], expr[i]);\n      |         ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~\n/usr/include/c++/13/tuple:2183:5: note: candidate: ‘template<class ... _Elements> typename std::enable_if<std::__and_<std::__is_swappable<_Elements>...>::value>::type std::swap(tuple<_UTypes ...>&, tuple<_UTypes ...>&)’\n 2183 |     swap(tuple<_Elements...>& __x, tuple<_Elements...>& __y)\n      |     ^~~~\n/usr/include/c++/13/tuple:2183:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p007.cpp:40:18: note:   mismatched types ‘std::tuple<_UTypes ...>’ and ‘const __gnu_cxx::__alloc_traits<std::allocator<char>, char>::value_type’ {aka ‘const char’}\n   40 |         std::swap(expr[start], expr[i]);\n      |         ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~\n/usr/include/c++/13/tuple:2201:5: note: candidate: ‘template<class ... _Elements> typename std::enable_if<(! std::__and_<std::__is_swappable<_Elements>...>::value)>::type std::swap(tuple<_UTypes ...>&, tuple<_UTypes ...>&)’ (deleted)\n 2201 |     swap(tuple<_Elements...>&, tuple<_Elements...>&) = delete;\n      |     ^~~~\n/usr/include/c++/13/tuple:2201:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p007.cpp:40:18: note:   mismatched types ‘std::tuple<_UTypes ...>’ and ‘const __gnu_cxx::__alloc_traits<std::allocator<char>, char>::value_type’ {aka ‘const char’}\n   40 |         std::swap(expr[start], expr[i]);\n      |         ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~\n/usr/include/c++/13/bits/stl_vector.h:2112:5: note: candidate: ‘template<class _Tp, class _Alloc> void std::swap(vector<_Tp, _Alloc>&, vector<_Tp, _Alloc>&)’\n 2112 |     swap(vector<_Tp, _Alloc>& __x, vector<_Tp, _Alloc>& __y)\n      |     ^~~~\n/usr/include/c++/13/bits/stl_vector.h:2112:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p007.cpp:40:18: note:   mismatched types ‘std::vector<_Tp, _Alloc>’ and ‘const __gnu_cxx::__alloc_traits<std::allocator<char>, char>::value_type’ {aka ‘const char’}\n   40 |         std::swap(expr[start], expr[i]);\n      |         ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p008",
+          "difficulty": "easy",
+          "status": "runtime_error",
+          "compile": true,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "submission: /home/wyh15/PersonalCoder/benchmark/outputs/Base/p008.cpp:19: void testWrongSubtraction(): Assertion `wrongSubtraction(12345, 3) == 1234' failed.",
+          "case_status_counts": {
+            "runtime_error": 5
+          }
+        },
+        {
+          "problem": "p009",
+          "difficulty": "easy",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 5
+          }
+        },
+        {
+          "problem": "p010",
+          "difficulty": "easy",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 5
+          }
+        },
+        {
+          "problem": "p011",
+          "difficulty": "easy",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": "missing_symbol",
+          "wa_category": null,
+          "error": "/home/wyh15/PersonalCoder/benchmark/outputs/Base/p011.cpp: In function ‘std::vector<std::__cxx11::basic_string<char> > generateAbbreviations(const std::string&)’:\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p011.cpp:21:33: error: variable ‘std::istringstream iss’ has initializer but incomplete type\n   21 |     std::istringstream iss(input);\n      |                                 ^",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p012",
+          "difficulty": "easy",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 5,
+          "passed": 3,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "accepted": 3,
+            "wrong_answer": 2
+          }
+        },
+        {
+          "problem": "p013",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p014",
+          "difficulty": "medium",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": "undeclared_identifier",
+          "wa_category": null,
+          "error": "/home/wyh15/PersonalCoder/benchmark/outputs/Base/p014.cpp: In constructor ‘DisjointSet::DisjointSet(int)’:\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p014.cpp:7:26: error: class ‘DisjointSet’ does not have any field named ‘parent’\n    7 |     DisjointSet(int n) : parent(n), rank(n, 0) {\n      |                          ^~~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p014.cpp:7:37: error: class ‘DisjointSet’ does not have any field named ‘rank’\n    7 |     DisjointSet(int n) : parent(n), rank(n, 0) {\n      |                                     ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p014.cpp:9:13: error: ‘parent’ was not declared in this scope\n    9 |             parent[i] = i;\n      |             ^~~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p014.cpp: In member function ‘int DisjointSet::find(int)’:\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p014.cpp:14:13: error: ‘parent’ was not declared in this scope\n   14 |         if (parent[x] != x) {\n      |             ^~~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p014.cpp:17:16: error: ‘parent’ was not declared in this scope\n   17 |         return parent[x];\n      |                ^~~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p014.cpp: In member function ‘void DisjointSet::unionSet(int, int)’:\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p014.cpp:26:13: error: ‘rank’ was not declared in this scope; did you mean ‘std::rank’?\n   26 |         if (rank[rootX] > rank[rootY]) {\n      |             ^~~~\n      |             std::rank\nIn file included from /usr/include/c++/13/bits/move.h:37,\n                 from /usr/include/c++/13/bits/exception_ptr.h:41,\n                 from /usr/include/c++/13/exception:164,\n                 from /usr/include/c++/13/ios:41,\n                 from /usr/include/c++/13/ostream:40,\n                 from /usr/include/c++/13/iostream:41,\n                 from /home/wyh15/PersonalCoder/benchmark/outputs/Base/p014.cpp:1:\n/usr/include/c++/13/type_traits:1356:12: note: ‘std::rank’ declared here\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p014.cpp:27:13: error: ‘parent’ was not declared in this scope\n   27 |             parent[rootY] = rootX;\n      |             ^~~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p014.cpp:29:13: error: ‘parent’ was not declared in this scope\n   29 |             parent[rootX] = rootY;\n      |             ^~~~~~",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p015",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p016",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p017",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p018",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p019",
+          "difficulty": "medium",
+          "status": "accepted",
+          "compile": true,
+          "ac": true,
+          "tests": 3,
+          "passed": 3,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "",
+          "case_status_counts": {
+            "accepted": 3
+          }
+        },
+        {
+          "problem": "p020",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 1,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "accepted": 1,
+            "wrong_answer": 2
+          }
+        },
+        {
+          "problem": "p021",
+          "difficulty": "medium",
+          "status": "accepted",
+          "compile": true,
+          "ac": true,
+          "tests": 3,
+          "passed": 3,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "",
+          "case_status_counts": {
+            "accepted": 3
+          }
+        },
+        {
+          "problem": "p022",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p023",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p024",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 2,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "accepted": 2,
+            "wrong_answer": 1
+          }
+        },
+        {
+          "problem": "p025",
+          "difficulty": "hard",
+          "status": "runtime_error",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "process exited with code -11",
+          "case_status_counts": {
+            "runtime_error": 3
+          }
+        },
+        {
+          "problem": "p026",
+          "difficulty": "hard",
+          "status": "runtime_error",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 1,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "process exited with code -11",
+          "case_status_counts": {
+            "accepted": 1,
+            "runtime_error": 2
+          }
+        },
+        {
+          "problem": "p027",
+          "difficulty": "hard",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": "template_error",
+          "wa_category": null,
+          "error": "date: ‘bool std::operator!=(const error_condition&, const error_code&)’\n  535 |   operator!=(const error_condition& __lhs, const error_code& __rhs) noexcept\n      |   ^~~~~~~~\n/usr/include/c++/13/system_error:535:37: note:   no known conversion for argument 1 from ‘std::vector<int>’ to ‘const std::error_condition&’\n  535 |   operator!=(const error_condition& __lhs, const error_code& __rhs) noexcept\n      |              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~\n/usr/include/c++/13/system_error:540:3: note: candidate: ‘bool std::operator!=(const error_condition&, const error_condition&)’\n  540 |   operator!=(const error_condition& __lhs,\n      |   ^~~~~~~~\n/usr/include/c++/13/system_error:540:37: note:   no known conversion for argument 1 from ‘std::vector<int>’ to ‘const std::error_condition&’\n  540 |   operator!=(const error_condition& __lhs,\n      |              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~\n/usr/include/c++/13/bits/allocator.h:222:7: note: candidate: ‘bool std::operator!=(const allocator<int>&, const allocator<int>&)’\n  222 |       operator!=(const allocator&, const allocator&) _GLIBCXX_NOTHROW\n      |       ^~~~~~~~\n/usr/include/c++/13/bits/allocator.h:222:18: note:   no known conversion for argument 1 from ‘std::vector<int>’ to ‘const std::allocator<int>&’\n  222 |       operator!=(const allocator&, const allocator&) _GLIBCXX_NOTHROW\n      |                  ^~~~~~~~~~~~~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p027.cpp:54:31: error: no matching function for call to ‘min(int&, std::vector<int>&)’\n   54 |                 min_dist = min(min_dist, dist[i]);\n      |                            ~~~^~~~~~~~~~~~~~~~~~~\n/usr/include/c++/13/bits/stl_algobase.h:233:5: note: candidate: ‘template<class _Tp> constexpr const _Tp& std::min(const _Tp&, const _Tp&)’\n  233 |     min(const _Tp& __a, const _Tp& __b)\n      |     ^~~\n/usr/include/c++/13/bits/stl_algobase.h:233:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p027.cpp:54:31: note:   deduced conflicting types for parameter ‘const _Tp’ (‘int’ and ‘std::vector<int>’)\n   54 |                 min_dist = min(min_dist, dist[i]);\n      |                            ~~~^~~~~~~~~~~~~~~~~~~\n/usr/include/c++/13/bits/stl_algobase.h:281:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr const _Tp& std::min(const _Tp&, const _Tp&, _Compare)’\n  281 |     min(const _Tp& __a, const _Tp& __b, _Compare __comp)\n      |     ^~~\n/usr/include/c++/13/bits/stl_algobase.h:281:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p027.cpp:54:31: note:   deduced conflicting types for parameter ‘const _Tp’ (‘int’ and ‘std::vector<int>’)\n   54 |                 min_dist = min(min_dist, dist[i]);\n      |                            ~~~^~~~~~~~~~~~~~~~~~~\nIn file included from /usr/include/c++/13/algorithm:61,\n                 from /home/wyh15/PersonalCoder/benchmark/outputs/Base/p027.cpp:3:\n/usr/include/c++/13/bits/stl_algo.h:5775:5: note: candidate: ‘template<class _Tp> constexpr _Tp std::min(initializer_list<_Tp>)’\n 5775 |     min(initializer_list<_Tp> __l)\n      |     ^~~\n/usr/include/c++/13/bits/stl_algo.h:5775:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p027.cpp:54:31: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘int’\n   54 |                 min_dist = min(min_dist, dist[i]);\n      |                            ~~~^~~~~~~~~~~~~~~~~~~\n/usr/include/c++/13/bits/stl_algo.h:5785:5: note: candidate: ‘template<class _Tp, class _Compare> constexpr _Tp std::min(initializer_list<_Tp>, _Compare)’\n 5785 |     min(initializer_list<_Tp> __l, _Compare __comp)\n      |     ^~~\n/usr/include/c++/13/bits/stl_algo.h:5785:5: note:   template argument deduction/substitution failed:\n/home/wyh15/PersonalCoder/benchmark/outputs/Base/p027.cpp:54:31: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘int’\n   54 |                 min_dist = min(min_dist, dist[i]);\n      |                            ~~~^~~~~~~~~~~~~~~~~~~",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p028",
+          "difficulty": "hard",
+          "status": "runtime_error",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "runtime_error": 1,
+            "wrong_answer": 2
+          }
+        },
+        {
+          "problem": "p029",
+          "difficulty": "hard",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 1,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "accepted": 1,
+            "wrong_answer": 2
+          }
+        },
+        {
+          "problem": "p030",
+          "difficulty": "hard",
+          "status": "runtime_error",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "runtime_error": 1,
+            "wrong_answer": 2
+          }
+        }
+      ]
+    },
+    "LoRA-512": {
+      "total": 30,
+      "failure_distribution": {
+        "accepted": 6,
+        "compile_error": 7,
+        "runtime_error": 1,
+        "wrong_answer": 16
+      },
+      "compile_error_distribution": {
+        "missing_symbol": 1,
+        "syntax_error": 1,
+        "type_error": 3,
+        "undeclared_identifier": 2
+      },
+      "testcase_status_distribution": {
+        "accepted": 35,
+        "runtime_error": 1,
+        "wrong_answer": 53
+      },
+      "problems": [
+        {
+          "problem": "p001",
+          "difficulty": "easy",
+          "status": "accepted",
+          "compile": true,
+          "ac": true,
+          "tests": 5,
+          "passed": 5,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "",
+          "case_status_counts": {
+            "accepted": 5
+          }
+        },
+        {
+          "problem": "p002",
+          "difficulty": "easy",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": "type_error",
+          "wa_category": null,
+          "error": "/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p002.cpp: In function ‘int main()’:\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p002.cpp:8:31: error: invalid operands of types ‘__gnu_cxx::__enable_if<true, double>::__type’ {aka ‘double’} and ‘int’ to binary ‘operator%’\n    8 |     if (w % 2 == 0 && sqrt(w) % 2 == 0) {\n      |                       ~~~~~~~ ^ ~\n      |                           |     |\n      |                           |     int\n      |                           __gnu_cxx::__enable_if<true, double>::__type {aka double}",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p003",
+          "difficulty": "easy",
+          "status": "accepted",
+          "compile": true,
+          "ac": true,
+          "tests": 5,
+          "passed": 5,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "",
+          "case_status_counts": {
+            "accepted": 5
+          }
+        },
+        {
+          "problem": "p004",
+          "difficulty": "easy",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 5,
+          "passed": 2,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "accepted": 2,
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p005",
+          "difficulty": "easy",
+          "status": "accepted",
+          "compile": true,
+          "ac": true,
+          "tests": 5,
+          "passed": 5,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "",
+          "case_status_counts": {
+            "accepted": 5
+          }
+        },
+        {
+          "problem": "p006",
+          "difficulty": "easy",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 5
+          }
+        },
+        {
+          "problem": "p007",
+          "difficulty": "easy",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 5
+          }
+        },
+        {
+          "problem": "p008",
+          "difficulty": "easy",
+          "status": "accepted",
+          "compile": true,
+          "ac": true,
+          "tests": 5,
+          "passed": 5,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "",
+          "case_status_counts": {
+            "accepted": 5
+          }
+        },
+        {
+          "problem": "p009",
+          "difficulty": "easy",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 5,
+          "passed": 2,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "accepted": 2,
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p010",
+          "difficulty": "easy",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 5
+          }
+        },
+        {
+          "problem": "p011",
+          "difficulty": "easy",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": "missing_symbol",
+          "wa_category": null,
+          "error": "/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p011.cpp: In function ‘int main()’:\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p011.cpp:10:33: error: variable ‘std::istringstream iss’ has initializer but incomplete type\n   10 |     std::istringstream iss(input);\n      |                                 ^",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p012",
+          "difficulty": "easy",
+          "status": "accepted",
+          "compile": true,
+          "ac": true,
+          "tests": 5,
+          "passed": 5,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "",
+          "case_status_counts": {
+            "accepted": 5
+          }
+        },
+        {
+          "problem": "p013",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p014",
+          "difficulty": "medium",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": "type_error",
+          "wa_category": null,
+          "error": "/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p014.cpp: In function ‘void init()’:\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p014.cpp:12:5: error: reference to ‘rank’ is ambiguous\n   12 |     rank.resize(n + 1);\n      |     ^~~~\nIn file included from /usr/include/c++/13/bits/move.h:37,\n                 from /usr/include/c++/13/bits/exception_ptr.h:41,\n                 from /usr/include/c++/13/exception:164,\n                 from /usr/include/c++/13/ios:41,\n                 from /usr/include/c++/13/ostream:40,\n                 from /usr/include/c++/13/iostream:41,\n                 from /home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p014.cpp:1:\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p014.cpp:8:16: note:                 ‘std::vector<int> rank’\n    8 | vector<int> p, rank;\n      |                ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p014.cpp:15:9: error: reference to ‘rank’ is ambiguous\n   15 |         rank[i] = 0;\n      |         ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p014.cpp:8:16: note:                 ‘std::vector<int> rank’\n    8 | vector<int> p, rank;\n      |                ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p014.cpp: In function ‘void unionSet(int, int)’:\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p014.cpp:32:9: error: reference to ‘rank’ is ambiguous\n   32 |     if (rank[px] < rank[py]) {\n      |         ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p014.cpp:8:16: note:                 ‘std::vector<int> rank’\n    8 | vector<int> p, rank;\n      |                ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p014.cpp:32:20: error: reference to ‘rank’ is ambiguous\n   32 |     if (rank[px] < rank[py]) {\n      |                    ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p014.cpp:8:16: note:                 ‘std::vector<int> rank’\n    8 | vector<int> p, rank;\n      |                ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p014.cpp:36:9: error: reference to ‘rank’ is ambiguous\n   36 |     if (rank[px] == rank[py]) {\n      |         ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p014.cpp:8:16: note:                 ‘std::vector<int> rank’\n    8 | vector<int> p, rank;\n      |                ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p014.cpp:36:21: error: reference to ‘rank’ is ambiguous\n   36 |     if (rank[px] == rank[py]) {\n      |                     ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p014.cpp:8:16: note:                 ‘std::vector<int> rank’\n    8 | vector<int> p, rank;\n      |                ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p014.cpp:37:9: error: reference to ‘rank’ is ambiguous\n   37 |         rank[px]++;\n      |         ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p014.cpp:8:16: note:                 ‘std::vector<int> rank’\n    8 | vector<int> p, rank;\n      |                ^~~~",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p015",
+          "difficulty": "medium",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": "undeclared_identifier",
+          "wa_category": null,
+          "error": "/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p015.cpp: In function ‘void dijkstra(int)’:\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p015.cpp:19:5: error: ‘priority_queue’ was not declared in this scope\n   19 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |     ^~~~~~~~~~~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p015.cpp:5:1: note: ‘std::priority_queue’ is defined in header ‘<queue>’; did you forget to ‘#include <queue>’?\n    4 | #include <climits>\n  +++ |+#include <queue>\n    5 | \n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p015.cpp:19:34: error: expected primary-expression before ‘,’ token\n   19 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                  ^\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p015.cpp:19:58: error: expected primary-expression before ‘,’ token\n   19 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                                          ^\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p015.cpp:19:83: error: expected primary-expression before ‘>’ token\n   19 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                                                                   ^\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p015.cpp:19:85: error: ‘pq’ was not declared in this scope\n   19 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                                                                     ^~",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p016",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p017",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p018",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 1,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "accepted": 1,
+            "wrong_answer": 2
+          }
+        },
+        {
+          "problem": "p019",
+          "difficulty": "medium",
+          "status": "accepted",
+          "compile": true,
+          "ac": true,
+          "tests": 3,
+          "passed": 3,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "",
+          "case_status_counts": {
+            "accepted": 3
+          }
+        },
+        {
+          "problem": "p020",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p021",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p022",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p023",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p024",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 1,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "accepted": 1,
+            "wrong_answer": 2
+          }
+        },
+        {
+          "problem": "p025",
+          "difficulty": "hard",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": "syntax_error",
+          "wa_category": null,
+          "error": "e\n   30 | int stcnt;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:291:5: error: redefinition of ‘int st [100001]’\n  291 | int st[MAXN];\n      |     ^~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:26:5: note: ‘int st [100001]’ previously declared here\n   26 | int st[MAXN];\n      |     ^~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:292:5: error: redefinition of ‘int sttop’\n  292 | int sttop;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:32:5: note: ‘int sttop’ previously declared here\n   32 | int sttop;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:293:5: error: redefinition of ‘int stn’\n  293 | int stn;\n      |     ^~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:33:5: note: ‘int stn’ previously declared here\n   33 | int stn;\n      |     ^~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:294:5: error: redefinition of ‘int stcnt’\n  294 | int stcnt;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:30:5: note: ‘int stcnt’ previously declared here\n   30 | int stcnt;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:296:5: error: redefinition of ‘int st [100001]’\n  296 | int st[MAXN];\n      |     ^~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:26:5: note: ‘int st [100001]’ previously declared here\n   26 | int st[MAXN];\n      |     ^~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:297:5: error: redefinition of ‘int sttop’\n  297 | int sttop;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:32:5: note: ‘int sttop’ previously declared here\n   32 | int sttop;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:298:5: error: redefinition of ‘int stn’\n  298 | int stn;\n      |     ^~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:33:5: note: ‘int stn’ previously declared here\n   33 | int stn;\n      |     ^~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:299:5: error: redefinition of ‘int stcnt’\n  299 | int stcnt;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:30:5: note: ‘int stcnt’ previously declared here\n   30 | int stcnt;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:301:5: error: redefinition of ‘int st [100001]’\n  301 | int st[MAXN];\n      |     ^~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:26:5: note: ‘int st [100001]’ previously declared here\n   26 | int st[MAXN];\n      |     ^~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:302:5: error: redefinition of ‘int sttop’\n  302 | int sttop;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:32:5: note: ‘int sttop’ previously declared here\n   32 | int sttop;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:303:5: error: redefinition of ‘int stn’\n  303 | int stn;\n      |     ^~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:33:5: note: ‘int stn’ previously declared here\n   33 | int stn;\n      |     ^~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:304:5: error: redefinition of ‘int stcnt’\n  304 | int stcnt;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:30:5: note: ‘int stcnt’ previously declared here\n   30 | int stcnt;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:306:5: error: redefinition of ‘int st [100001]’\n  306 | int st[MAXN];\n      |     ^~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:26:5: note: ‘int st [100001]’ previously declared here\n   26 | int st[MAXN];\n      |     ^~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:307:5: error: redefinition of ‘int sttop’\n  307 | int sttop;\n      |     ^~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p025.cpp:32:5: note: ‘int sttop’ previously declared here\n   32 | int sttop;\n      |     ^~~~~",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p026",
+          "difficulty": "hard",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": "type_error",
+          "wa_category": null,
+          "error": "/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p026.cpp: In function ‘void dfs1(int, int)’:\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p026.cpp:29:34: error: reference to ‘next’ is ambiguous\n   29 |     for (int i = head[u]; i; i = next[i]) {\n      |                                  ^~~~\nIn file included from /usr/include/c++/13/string:47,\n                 from /usr/include/c++/13/bits/locale_classes.h:40,\n                 from /usr/include/c++/13/bits/ios_base.h:41,\n                 from /usr/include/c++/13/ios:44,\n                 from /usr/include/c++/13/ostream:40,\n                 from /usr/include/c++/13/iostream:41,\n                 from /home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p026.cpp:1:\n/usr/include/c++/13/bits/stl_iterator_base_funcs.h:232:5: note: candidates are: ‘template<class _InputIterator> constexpr _InputIterator std::next(_InputIterator, typename iterator_traits<_Iter>::difference_type)’\n  232 |     next(_InputIterator __x, typename\n      |     ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p026.cpp:14:5: note:                 ‘int next [100005]’\n   14 | int next[MAXN];\n      |     ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p026.cpp: In function ‘void dfs2(int, int)’:\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p026.cpp:39:34: error: reference to ‘next’ is ambiguous\n   39 |     for (int i = head[u]; i; i = next[i]) {\n      |                                  ^~~~\n/usr/include/c++/13/bits/stl_iterator_base_funcs.h:232:5: note: candidates are: ‘template<class _InputIterator> constexpr _InputIterator std::next(_InputIterator, typename iterator_traits<_Iter>::difference_type)’\n  232 |     next(_InputIterator __x, typename\n      |     ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p026.cpp:14:5: note:                 ‘int next [100005]’\n   14 | int next[MAXN];\n      |     ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p026.cpp: In function ‘int main()’:\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p026.cpp:74:9: error: reference to ‘next’ is ambiguous\n   74 |         next[cnt] = head[v];\n      |         ^~~~\n/usr/include/c++/13/bits/stl_iterator_base_funcs.h:232:5: note: candidates are: ‘template<class _InputIterator> constexpr _InputIterator std::next(_InputIterator, typename iterator_traits<_Iter>::difference_type)’\n  232 |     next(_InputIterator __x, typename\n      |     ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p026.cpp:14:5: note:                 ‘int next [100005]’\n   14 | int next[MAXN];\n      |     ^~~~",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p027",
+          "difficulty": "hard",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": "undeclared_identifier",
+          "wa_category": null,
+          "error": "/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p027.cpp: In function ‘void dijkstra(int)’:\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p027.cpp:19:5: error: ‘priority_queue’ was not declared in this scope\n   19 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |     ^~~~~~~~~~~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p027.cpp:6:1: note: ‘std::priority_queue’ is defined in header ‘<queue>’; did you forget to ‘#include <queue>’?\n    5 | #include <cassert>\n  +++ |+#include <queue>\n    6 | \n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p027.cpp:19:34: error: expected primary-expression before ‘,’ token\n   19 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                  ^\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p027.cpp:19:58: error: expected primary-expression before ‘,’ token\n   19 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                                          ^\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p027.cpp:19:83: error: expected primary-expression before ‘>’ token\n   19 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                                                                   ^\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p027.cpp:19:85: error: ‘pq’ was not declared in this scope\n   19 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                                                                     ^~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p027.cpp:32:33: error: ‘__gnu_cxx::__alloc_traits<std::allocator<std::vector<int> >, std::vector<int> >::value_type’ {aka ‘class std::vector<int>’} has no member named ‘first’\n   32 |             int v = graph[u][i].first;\n      |                                 ^~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-512/p027.cpp:33:33: error: ‘__gnu_cxx::__alloc_traits<std::allocator<std::vector<int> >, std::vector<int> >::value_type’ {aka ‘class std::vector<int>’} has no member named ‘second’\n   33 |             int w = graph[u][i].second;\n      |                                 ^~~~~~",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p028",
+          "difficulty": "hard",
+          "status": "runtime_error",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "double free or corruption (out)",
+          "case_status_counts": {
+            "runtime_error": 1,
+            "wrong_answer": 2
+          }
+        },
+        {
+          "problem": "p029",
+          "difficulty": "hard",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 1,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "accepted": 1,
+            "wrong_answer": 2
+          }
+        },
+        {
+          "problem": "p030",
+          "difficulty": "hard",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        }
+      ]
+    },
+    "LoRA-1536": {
+      "total": 30,
+      "failure_distribution": {
+        "accepted": 5,
+        "compile_error": 5,
+        "runtime_error": 2,
+        "wrong_answer": 18
+      },
+      "compile_error_distribution": {
+        "missing_symbol": 1,
+        "syntax_error": 1,
+        "type_error": 1,
+        "undeclared_identifier": 2
+      },
+      "testcase_status_distribution": {
+        "accepted": 30,
+        "runtime_error": 4,
+        "wrong_answer": 63
+      },
+      "problems": [
+        {
+          "problem": "p001",
+          "difficulty": "easy",
+          "status": "accepted",
+          "compile": true,
+          "ac": true,
+          "tests": 5,
+          "passed": 5,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "",
+          "case_status_counts": {
+            "accepted": 5
+          }
+        },
+        {
+          "problem": "p002",
+          "difficulty": "easy",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 5
+          }
+        },
+        {
+          "problem": "p003",
+          "difficulty": "easy",
+          "status": "accepted",
+          "compile": true,
+          "ac": true,
+          "tests": 5,
+          "passed": 5,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "",
+          "case_status_counts": {
+            "accepted": 5
+          }
+        },
+        {
+          "problem": "p004",
+          "difficulty": "easy",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 5,
+          "passed": 1,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "accepted": 1,
+            "wrong_answer": 4
+          }
+        },
+        {
+          "problem": "p005",
+          "difficulty": "easy",
+          "status": "accepted",
+          "compile": true,
+          "ac": true,
+          "tests": 5,
+          "passed": 5,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "",
+          "case_status_counts": {
+            "accepted": 5
+          }
+        },
+        {
+          "problem": "p006",
+          "difficulty": "easy",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 5
+          }
+        },
+        {
+          "problem": "p007",
+          "difficulty": "easy",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 5
+          }
+        },
+        {
+          "problem": "p008",
+          "difficulty": "easy",
+          "status": "accepted",
+          "compile": true,
+          "ac": true,
+          "tests": 5,
+          "passed": 5,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "",
+          "case_status_counts": {
+            "accepted": 5
+          }
+        },
+        {
+          "problem": "p009",
+          "difficulty": "easy",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 5
+          }
+        },
+        {
+          "problem": "p010",
+          "difficulty": "easy",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 5
+          }
+        },
+        {
+          "problem": "p011",
+          "difficulty": "easy",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 5,
+          "passed": 0,
+          "compile_error_category": "missing_symbol",
+          "wa_category": null,
+          "error": "/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p011.cpp: In function ‘int main()’:\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p011.cpp:10:33: error: variable ‘std::istringstream iss’ has initializer but incomplete type\n   10 |     std::istringstream iss(input);\n      |                                 ^",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p012",
+          "difficulty": "easy",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 5,
+          "passed": 3,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "accepted": 3,
+            "wrong_answer": 2
+          }
+        },
+        {
+          "problem": "p013",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p014",
+          "difficulty": "medium",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": "type_error",
+          "wa_category": null,
+          "error": "/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p014.cpp: In function ‘void init(int)’:\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p014.cpp:14:9: error: reference to ‘rank’ is ambiguous\n   14 |         rank[i] = 0;\n      |         ^~~~\nIn file included from /usr/include/c++/13/bits/move.h:37,\n                 from /usr/include/c++/13/bits/exception_ptr.h:41,\n                 from /usr/include/c++/13/exception:164,\n                 from /usr/include/c++/13/ios:41,\n                 from /usr/include/c++/13/ostream:40,\n                 from /usr/include/c++/13/iostream:41,\n                 from /home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p014.cpp:1:\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p014.cpp:9:5: note:                 ‘int rank [100005]’\n    9 | int rank[100005];\n      |     ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p014.cpp: In function ‘void unionSet(int, int)’:\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p014.cpp:31:9: error: reference to ‘rank’ is ambiguous\n   31 |     if (rank[px] < rank[py]) {\n      |         ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p014.cpp:9:5: note:                 ‘int rank [100005]’\n    9 | int rank[100005];\n      |     ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p014.cpp:31:20: error: reference to ‘rank’ is ambiguous\n   31 |     if (rank[px] < rank[py]) {\n      |                    ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p014.cpp:9:5: note:                 ‘int rank [100005]’\n    9 | int rank[100005];\n      |     ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p014.cpp:33:16: error: reference to ‘rank’ is ambiguous\n   33 |     } else if (rank[px] > rank[py]) {\n      |                ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p014.cpp:9:5: note:                 ‘int rank [100005]’\n    9 | int rank[100005];\n      |     ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p014.cpp:33:27: error: reference to ‘rank’ is ambiguous\n   33 |     } else if (rank[px] > rank[py]) {\n      |                           ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p014.cpp:9:5: note:                 ‘int rank [100005]’\n    9 | int rank[100005];\n      |     ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p014.cpp:37:9: error: reference to ‘rank’ is ambiguous\n   37 |         rank[px]++;\n      |         ^~~~\n/usr/include/c++/13/type_traits:1356:12: note: candidates are: ‘template<class> struct std::rank’\n 1356 |     struct rank\n      |            ^~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p014.cpp:9:5: note:                 ‘int rank [100005]’\n    9 | int rank[100005];\n      |     ^~~~",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p015",
+          "difficulty": "medium",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": "undeclared_identifier",
+          "wa_category": null,
+          "error": "/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p015.cpp: In function ‘void dijkstra(int)’:\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p015.cpp:20:5: error: ‘priority_queue’ was not declared in this scope\n   20 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |     ^~~~~~~~~~~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p015.cpp:5:1: note: ‘std::priority_queue’ is defined in header ‘<queue>’; did you forget to ‘#include <queue>’?\n    4 | #include <algorithm>\n  +++ |+#include <queue>\n    5 | \n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p015.cpp:20:34: error: expected primary-expression before ‘,’ token\n   20 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                  ^\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p015.cpp:20:58: error: expected primary-expression before ‘,’ token\n   20 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                                          ^\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p015.cpp:20:83: error: expected primary-expression before ‘>’ token\n   20 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                                                                   ^\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p015.cpp:20:85: error: ‘pq’ was not declared in this scope\n   20 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                                                                     ^~",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p016",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p017",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p018",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 1,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "accepted": 1,
+            "wrong_answer": 2
+          }
+        },
+        {
+          "problem": "p019",
+          "difficulty": "medium",
+          "status": "accepted",
+          "compile": true,
+          "ac": true,
+          "tests": 3,
+          "passed": 3,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "",
+          "case_status_counts": {
+            "accepted": 3
+          }
+        },
+        {
+          "problem": "p020",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p021",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 1,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "accepted": 1,
+            "wrong_answer": 2
+          }
+        },
+        {
+          "problem": "p022",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p023",
+          "difficulty": "medium",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p024",
+          "difficulty": "medium",
+          "status": "runtime_error",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "process exited with code -11",
+          "case_status_counts": {
+            "runtime_error": 3
+          }
+        },
+        {
+          "problem": "p025",
+          "difficulty": "hard",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": "syntax_error",
+          "wa_category": null,
+          "error": "/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p025.cpp:140:15: error: expected primary-expression at end of input\n  140 | int topcnt59 =\n      |               ^",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p026",
+          "difficulty": "hard",
+          "status": "runtime_error",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 1,
+          "compile_error_category": null,
+          "wa_category": null,
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "accepted": 1,
+            "runtime_error": 1,
+            "wrong_answer": 1
+          }
+        },
+        {
+          "problem": "p027",
+          "difficulty": "hard",
+          "status": "compile_error",
+          "compile": false,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": "undeclared_identifier",
+          "wa_category": null,
+          "error": "/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p027.cpp: In function ‘void dijkstra(int)’:\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p027.cpp:20:5: error: ‘priority_queue’ was not declared in this scope\n   20 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |     ^~~~~~~~~~~~~~\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p027.cpp:5:1: note: ‘std::priority_queue’ is defined in header ‘<queue>’; did you forget to ‘#include <queue>’?\n    4 | #include <climits>\n  +++ |+#include <queue>\n    5 | \n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p027.cpp:20:34: error: expected primary-expression before ‘,’ token\n   20 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                  ^\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p027.cpp:20:58: error: expected primary-expression before ‘,’ token\n   20 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                                          ^\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p027.cpp:20:83: error: expected primary-expression before ‘>’ token\n   20 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                                                                   ^\n/home/wyh15/PersonalCoder/benchmark/outputs/LoRA-1536/p027.cpp:20:85: error: ‘pq’ was not declared in this scope\n   20 |     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;\n      |                                                                                     ^~",
+          "case_status_counts": {}
+        },
+        {
+          "problem": "p028",
+          "difficulty": "hard",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p029",
+          "difficulty": "hard",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        },
+        {
+          "problem": "p030",
+          "difficulty": "hard",
+          "status": "wrong_answer",
+          "compile": true,
+          "ac": false,
+          "tests": 3,
+          "passed": 0,
+          "compile_error_category": null,
+          "wa_category": "unknown",
+          "error": "output differs from expected",
+          "case_status_counts": {
+            "wrong_answer": 3
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1846 @@
+{
+  "metadata": {
+    "details": "/home/wyh15/PersonalCoder/benchmark/reports/details.json",
+    "manifest": "/home/wyh15/PersonalCoder/benchmark/manifest.jsonl",
+    "outputs": "/home/wyh15/PersonalCoder/benchmark/outputs",
+    "scope_definitions": {
+      "Style-All": "all generated submissions",
+      "Style-Compiled": "submissions with compile=true in details.json",
+      "Style-AC": "submissions with ac=true in details.json"
+    },
+    "feature_definitions": {
+      "using_namespace_std": "using namespace std",
+      "bits_stdcpp": "#include<bits/stdc++.h> with optional whitespace",
+      "maxn_maxm_constant": "MAXN/MAXM/MAX_* style identifier",
+      "static_array": "C-style fixed-size array declaration",
+      "vector": "std::vector or vector",
+      "ios_sync_with_stdio": "ios::sync_with_stdio call",
+      "cin_tie": "cin.tie call",
+      "long_long": "long long type",
+      "define_int_long_long": "#define int long long"
+    }
+  },
+  "models": {
+    "Base": {
+      "Style-All": {
+        "samples": 30,
+        "features": {
+          "using_namespace_std": {
+            "count": 7,
+            "rate": 0.233333
+          },
+          "bits_stdcpp": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "maxn_maxm_constant": {
+            "count": 2,
+            "rate": 0.066667
+          },
+          "static_array": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "vector": {
+            "count": 25,
+            "rate": 0.833333
+          },
+          "ios_sync_with_stdio": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "cin_tie": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "long_long": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "define_int_long_long": {
+            "count": 0,
+            "rate": 0.0
+          }
+        }
+      },
+      "Style-Compiled": {
+        "samples": 23,
+        "features": {
+          "using_namespace_std": {
+            "count": 6,
+            "rate": 0.26087
+          },
+          "bits_stdcpp": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "maxn_maxm_constant": {
+            "count": 1,
+            "rate": 0.043478
+          },
+          "static_array": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "vector": {
+            "count": 20,
+            "rate": 0.869565
+          },
+          "ios_sync_with_stdio": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "cin_tie": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "long_long": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "define_int_long_long": {
+            "count": 0,
+            "rate": 0.0
+          }
+        }
+      },
+      "Style-AC": {
+        "samples": 5,
+        "features": {
+          "using_namespace_std": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "bits_stdcpp": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "maxn_maxm_constant": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "static_array": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "vector": {
+            "count": 3,
+            "rate": 0.6
+          },
+          "ios_sync_with_stdio": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "cin_tie": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "long_long": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "define_int_long_long": {
+            "count": 0,
+            "rate": 0.0
+          }
+        }
+      },
+      "per_problem": [
+        {
+          "problem": "p001",
+          "compile": true,
+          "ac": true,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p002",
+          "compile": true,
+          "ac": true,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p003",
+          "compile": true,
+          "ac": true,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p004",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p005",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p006",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p007",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p008",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p009",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p010",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p011",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p012",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p013",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p014",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p015",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": true,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p016",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p017",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p018",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p019",
+          "compile": true,
+          "ac": true,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p020",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p021",
+          "compile": true,
+          "ac": true,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p022",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p023",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p024",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p025",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p026",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p027",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": true,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p028",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p029",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p030",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        }
+      ]
+    },
+    "LoRA-512": {
+      "Style-All": {
+        "samples": 30,
+        "features": {
+          "using_namespace_std": {
+            "count": 17,
+            "rate": 0.566667
+          },
+          "bits_stdcpp": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "maxn_maxm_constant": {
+            "count": 6,
+            "rate": 0.2
+          },
+          "static_array": {
+            "count": 6,
+            "rate": 0.2
+          },
+          "vector": {
+            "count": 21,
+            "rate": 0.7
+          },
+          "ios_sync_with_stdio": {
+            "count": 1,
+            "rate": 0.033333
+          },
+          "cin_tie": {
+            "count": 1,
+            "rate": 0.033333
+          },
+          "long_long": {
+            "count": 1,
+            "rate": 0.033333
+          },
+          "define_int_long_long": {
+            "count": 0,
+            "rate": 0.0
+          }
+        }
+      },
+      "Style-Compiled": {
+        "samples": 23,
+        "features": {
+          "using_namespace_std": {
+            "count": 11,
+            "rate": 0.478261
+          },
+          "bits_stdcpp": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "maxn_maxm_constant": {
+            "count": 2,
+            "rate": 0.086957
+          },
+          "static_array": {
+            "count": 2,
+            "rate": 0.086957
+          },
+          "vector": {
+            "count": 16,
+            "rate": 0.695652
+          },
+          "ios_sync_with_stdio": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "cin_tie": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "long_long": {
+            "count": 1,
+            "rate": 0.043478
+          },
+          "define_int_long_long": {
+            "count": 0,
+            "rate": 0.0
+          }
+        }
+      },
+      "Style-AC": {
+        "samples": 6,
+        "features": {
+          "using_namespace_std": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "bits_stdcpp": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "maxn_maxm_constant": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "static_array": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "vector": {
+            "count": 2,
+            "rate": 0.333333
+          },
+          "ios_sync_with_stdio": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "cin_tie": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "long_long": {
+            "count": 1,
+            "rate": 0.166667
+          },
+          "define_int_long_long": {
+            "count": 0,
+            "rate": 0.0
+          }
+        }
+      },
+      "per_problem": [
+        {
+          "problem": "p001",
+          "compile": true,
+          "ac": true,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p002",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p003",
+          "compile": true,
+          "ac": true,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p004",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p005",
+          "compile": true,
+          "ac": true,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p006",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p007",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p008",
+          "compile": true,
+          "ac": true,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p009",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p010",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p011",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p012",
+          "compile": true,
+          "ac": true,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": true,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p013",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p014",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": true,
+            "cin_tie": true,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p015",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": true,
+            "static_array": true,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p016",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": true,
+            "static_array": true,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p017",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p018",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p019",
+          "compile": true,
+          "ac": true,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p020",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p021",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p022",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p023",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p024",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p025",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": true,
+            "static_array": true,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p026",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": true,
+            "static_array": true,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p027",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": true,
+            "static_array": true,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p028",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p029",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p030",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": true,
+            "static_array": true,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        }
+      ]
+    },
+    "LoRA-1536": {
+      "Style-All": {
+        "samples": 30,
+        "features": {
+          "using_namespace_std": {
+            "count": 10,
+            "rate": 0.333333
+          },
+          "bits_stdcpp": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "maxn_maxm_constant": {
+            "count": 5,
+            "rate": 0.166667
+          },
+          "static_array": {
+            "count": 5,
+            "rate": 0.166667
+          },
+          "vector": {
+            "count": 23,
+            "rate": 0.766667
+          },
+          "ios_sync_with_stdio": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "cin_tie": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "long_long": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "define_int_long_long": {
+            "count": 0,
+            "rate": 0.0
+          }
+        }
+      },
+      "Style-Compiled": {
+        "samples": 25,
+        "features": {
+          "using_namespace_std": {
+            "count": 6,
+            "rate": 0.24
+          },
+          "bits_stdcpp": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "maxn_maxm_constant": {
+            "count": 2,
+            "rate": 0.08
+          },
+          "static_array": {
+            "count": 1,
+            "rate": 0.04
+          },
+          "vector": {
+            "count": 20,
+            "rate": 0.8
+          },
+          "ios_sync_with_stdio": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "cin_tie": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "long_long": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "define_int_long_long": {
+            "count": 0,
+            "rate": 0.0
+          }
+        }
+      },
+      "Style-AC": {
+        "samples": 5,
+        "features": {
+          "using_namespace_std": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "bits_stdcpp": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "maxn_maxm_constant": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "static_array": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "vector": {
+            "count": 3,
+            "rate": 0.6
+          },
+          "ios_sync_with_stdio": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "cin_tie": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "long_long": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "define_int_long_long": {
+            "count": 0,
+            "rate": 0.0
+          }
+        }
+      },
+      "per_problem": [
+        {
+          "problem": "p001",
+          "compile": true,
+          "ac": true,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p002",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p003",
+          "compile": true,
+          "ac": true,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p004",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p005",
+          "compile": true,
+          "ac": true,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p006",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p007",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p008",
+          "compile": true,
+          "ac": true,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p009",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p010",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p011",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p012",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p013",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p014",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": true,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p015",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": true,
+            "static_array": true,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p016",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": true,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p017",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p018",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p019",
+          "compile": true,
+          "ac": true,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p020",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p021",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p022",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p023",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p024",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p025",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": true,
+            "static_array": true,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p026",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p027",
+          "compile": false,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": true,
+            "static_array": true,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p028",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p029",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": false,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": false,
+            "static_array": false,
+            "vector": true,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        },
+        {
+          "problem": "p030",
+          "compile": true,
+          "ac": false,
+          "features": {
+            "using_namespace_std": true,
+            "bits_stdcpp": false,
+            "maxn_maxm_constant": true,
+            "static_array": true,
+            "vector": false,
+            "ios_sync_with_stdio": false,
+            "cin_tie": false,
+            "long_long": false,
+            "define_int_long_long": false
+          }
+        }
+      ]
+    }
+  }
+}

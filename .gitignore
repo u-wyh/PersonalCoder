@@ -4,6 +4,10 @@ outputs/
 benchmark/reports/*
 !benchmark/reports/summary.json
 !benchmark/reports/pilot_results.md
+!benchmark/reports/failure_analysis.json
+!benchmark/reports/style_benchmark.json
+!benchmark/reports/comparison.md
+!benchmark/reports/phase2_6_analysis.md
 benchmark/raw_outputs/
 .venv/
 __pycache__/
