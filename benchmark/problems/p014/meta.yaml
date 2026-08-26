@@ -6,3 +6,5 @@ difficulty: medium
 time_limit_seconds: 2.0
 memory_limit_mb: 256
 stdout_limit_kb: 1024
+checker:
+  type: token

@@ -1,0 +1,343 @@
+{
+  "summary": {
+    "problems": 30,
+    "passed": 30,
+    "failed": 0,
+    "tests": 138,
+    "checker_counts": {
+      "token": 30
+    }
+  },
+  "problems": [
+    {
+      "id": "p001",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p001",
+      "status": "pass",
+      "checker": "token",
+      "tests": 5,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p002",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p002",
+      "status": "pass",
+      "checker": "token",
+      "tests": 8,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p003",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p003",
+      "status": "pass",
+      "checker": "token",
+      "tests": 5,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p004",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p004",
+      "status": "pass",
+      "checker": "token",
+      "tests": 5,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p005",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p005",
+      "status": "pass",
+      "checker": "token",
+      "tests": 5,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p006",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p006",
+      "status": "pass",
+      "checker": "token",
+      "tests": 5,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p007",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p007",
+      "status": "pass",
+      "checker": "token",
+      "tests": 5,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p008",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p008",
+      "status": "pass",
+      "checker": "token",
+      "tests": 5,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p009",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p009",
+      "status": "pass",
+      "checker": "token",
+      "tests": 5,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p010",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p010",
+      "status": "pass",
+      "checker": "token",
+      "tests": 5,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p011",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p011",
+      "status": "pass",
+      "checker": "token",
+      "tests": 5,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p012",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p012",
+      "status": "pass",
+      "checker": "token",
+      "tests": 6,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p013",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p013",
+      "status": "pass",
+      "checker": "token",
+      "tests": 4,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p014",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p014",
+      "status": "pass",
+      "checker": "token",
+      "tests": 4,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p015",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p015",
+      "status": "pass",
+      "checker": "token",
+      "tests": 4,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p016",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p016",
+      "status": "pass",
+      "checker": "token",
+      "tests": 4,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p017",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p017",
+      "status": "pass",
+      "checker": "token",
+      "tests": 4,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p018",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p018",
+      "status": "pass",
+      "checker": "token",
+      "tests": 4,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p019",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p019",
+      "status": "pass",
+      "checker": "token",
+      "tests": 5,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p020",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p020",
+      "status": "pass",
+      "checker": "token",
+      "tests": 4,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p021",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p021",
+      "status": "pass",
+      "checker": "token",
+      "tests": 5,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p022",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p022",
+      "status": "pass",
+      "checker": "token",
+      "tests": 4,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p023",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p023",
+      "status": "pass",
+      "checker": "token",
+      "tests": 4,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p024",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p024",
+      "status": "pass",
+      "checker": "token",
+      "tests": 4,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p025",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p025",
+      "status": "pass",
+      "checker": "token",
+      "tests": 4,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p026",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p026",
+      "status": "pass",
+      "checker": "token",
+      "tests": 4,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p027",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p027",
+      "status": "pass",
+      "checker": "token",
+      "tests": 4,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p028",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p028",
+      "status": "pass",
+      "checker": "token",
+      "tests": 4,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p029",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p029",
+      "status": "pass",
+      "checker": "token",
+      "tests": 4,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "id": "p030",
+      "path": "/home/wyh15/PersonalCoder/benchmark/problems/p030",
+      "status": "pass",
+      "checker": "token",
+      "tests": 4,
+      "reference_compile": true,
+      "reference_ac": true,
+      "errors": [],
+      "warnings": []
+    }
+  ]
+}

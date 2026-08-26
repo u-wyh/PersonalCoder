@@ -22,6 +22,7 @@ DEFAULT_MEMORY_LIMIT_MB = 256
 DEFAULT_STDOUT_LIMIT_KB = 1024
 COMPILE_TIMEOUT_SECONDS = 30.0
 ERROR_TEXT_LIMIT = 4096
+SUPPORTED_CHECKERS = {"exact", "token"}
 
 
 class JudgeError(RuntimeError):
@@ -52,12 +53,13 @@ def _parse_scalar(value: str) -> Any:
 
 
 def load_meta(problem_dir: Path) -> dict[str, Any]:
-    """Read the flat key/value subset of YAML used by benchmark metadata."""
+    """Read the small key/value YAML subset used by benchmark metadata."""
     meta_path = problem_dir / "meta.yaml"
     if not meta_path.exists():
         return {}
 
     meta: dict[str, Any] = {}
+    section: str | None = None
     for line_number, raw_line in enumerate(
         meta_path.read_text(encoding="utf-8").splitlines(), start=1
     ):
@@ -70,8 +72,31 @@ def load_meta(problem_dir: Path) -> dict[str, Any]:
         key = key.strip()
         if not key:
             raise JudgeError(f"meta.yaml:{line_number}: empty key")
-        meta[key] = _parse_scalar(value)
+        value = value.strip()
+        indentation = len(raw_line) - len(raw_line.lstrip())
+        if indentation == 0:
+            if not value:
+                section = key
+                continue
+            section = None
+            meta[key] = _parse_scalar(value)
+        else:
+            if section is None:
+                raise JudgeError(
+                    f"meta.yaml:{line_number}: nested key without a section"
+                )
+            meta[f"{section}.{key}"] = _parse_scalar(value)
     return meta
+
+
+def load_checker_type(problem_dir: Path) -> str:
+    checker_type = str(load_meta(problem_dir).get("checker.type", "exact"))
+    if checker_type not in SUPPORTED_CHECKERS:
+        raise JudgeError(
+            f"unsupported checker type {checker_type!r}; "
+            f"expected one of {sorted(SUPPORTED_CHECKERS)}"
+        )
+    return checker_type
 
 
 def load_limits(problem_dir: Path) -> Limits:
@@ -107,6 +132,15 @@ def discover_tests(problem_dir: Path) -> list[tuple[str, Path, Path]]:
 
 def _truncate(text: str) -> str:
     return text[-ERROR_TEXT_LIMIT:]
+
+
+def compare_output(actual: bytes, expected: bytes, checker_type: str) -> bool:
+    """Compare program output using an explicitly supported checker."""
+    if checker_type == "exact":
+        return actual == expected
+    if checker_type == "token":
+        return actual.split() == expected.split()
+    raise JudgeError(f"unsupported checker type {checker_type!r}")
 
 
 def compile_cpp(source: Path, executable: Path) -> tuple[bool, str]:
@@ -155,6 +189,7 @@ def run_case(
     input_path: Path,
     expected_path: Path,
     limits: Limits,
+    checker_type: str,
     work_dir: Path,
 ) -> dict[str, Any]:
     actual_path = work_dir / f"{case_name}.actual"
@@ -207,8 +242,11 @@ def run_case(
 
     actual = actual_path.read_bytes()
     expected = expected_path.read_bytes()
-    if actual != expected:
-        result.update(status="wrong_answer", error="output differs from expected")
+    if not compare_output(actual, expected, checker_type):
+        result.update(
+            status="wrong_answer",
+            error=f"output differs from expected ({checker_type} checker)",
+        )
         return result
 
     result.update(passed=True, status="accepted")
@@ -225,6 +263,7 @@ def judge(source: str | Path, problem: str | Path) -> dict[str, Any]:
         raise JudgeError(f"problem directory not found: {problem_dir}")
 
     limits = load_limits(problem_dir)
+    checker_type = load_checker_type(problem_dir)
     testcases = discover_tests(problem_dir)
     with tempfile.TemporaryDirectory(prefix="personalcoder-judge-") as temp_name:
         temp_dir = Path(temp_name)
@@ -242,7 +281,15 @@ def judge(source: str | Path, problem: str | Path) -> dict[str, Any]:
             }
 
         case_results = [
-            run_case(executable, name, input_path, output_path, limits, temp_dir)
+            run_case(
+                executable,
+                name,
+                input_path,
+                output_path,
+                limits,
+                checker_type,
+                temp_dir,
+            )
             for name, input_path, output_path in testcases
         ]
 

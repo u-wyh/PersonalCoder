@@ -8,6 +8,13 @@ benchmark/reports/*
 !benchmark/reports/style_benchmark.json
 !benchmark/reports/comparison.md
 !benchmark/reports/phase2_6_analysis.md
+!benchmark/reports/benchmark_audit.json
+!benchmark/reports/benchmark_audit.md
+!benchmark/reports/benchmark_audit_changes.md
+!benchmark/reports/pilot_v1/
+!benchmark/reports/pilot_v1/**
+!benchmark/reports/pilot_v1_1/
+!benchmark/reports/pilot_v1_1/**
 benchmark/raw_outputs/
 .venv/
 __pycache__/
