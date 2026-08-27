@@ -1,0 +1,22 @@
+[
+  {"id": "codeforces_626E", "category": "code_error", "reason": "The algorithm emits a prefix-sum debug line before the required answer, so every official sample is rejected despite the later construction matching."},
+  {"id": "codeforces_631D", "category": "problem_id_mapping_error", "reason": "The response is a virtual-tree/LCA solution and is unrelated to the compressed-string matching statement; sample execution is killed."},
+  {"id": "codeforces_679A", "category": "interactive_problem", "reason": "This is an interactive query problem. A static stdin/stdout sample transcript cannot verify the otherwise matching interactive implementation."},
+  {"id": "luogu_P11226", "category": "special_checker", "reason": "The task accepts any valid alphabet permutation per team. The generated permutations differ from the sample and require semantic validation, not token equality."},
+  {"id": "luogu_P11277", "category": "special_checker", "reason": "The task accepts any constructed sequence satisfying the pair-count constraint; comparison with one sample construction is not a validity checker."},
+  {"id": "luogu_P11888", "category": "problem_id_mapping_error", "reason": "The response solves an unrelated digit-cost dynamic program and its input contract does not match the Fibonacci-LCM problem."},
+  {"id": "luogu_P12009", "category": "code_error", "reason": "The implementation's DSU/hash update returns Haru for the third query where the two strings become equivalent; this is a concrete algorithm/implementation error."},
+  {"id": "luogu_P1277", "category": "special_checker", "reason": "The actual 4x4 matrix differs from the sample but satisfies every row, column, diagonal, and fixed-cell constraint; any valid matrix is accepted."},
+  {"id": "luogu_P2208", "category": "code_error", "reason": "The graph construction and gravity transitions are unfinished and main returns without printing an answer."},
+  {"id": "luogu_P2323", "category": "special_checker", "reason": "The response outputs a different valid minimum-bottleneck spanning-tree construction with the required number of type-1 roads; exact sample matching is invalid."},
+  {"id": "luogu_P2375", "category": "code_error", "reason": "The required product computation is commented out and the program prints string lengths and prefix-function debug arrays."},
+  {"id": "luogu_P2472", "category": "code_error", "reason": "Grid vertex IDs use n as the row stride instead of m and the escape-boundary test is off by one, producing a wrong max-flow network."},
+  {"id": "luogu_P2783", "category": "code_error", "reason": "The program reads queries using the edge count, builds/traverses the wrong adjacency structure after contraction, and prints decimal rather than binary answers."},
+  {"id": "luogu_P3848", "category": "code_error", "reason": "The DFS walks to adjacent zero cells instead of jumping across one or more occupied cells to the next zero cell, solving a different movement rule."},
+  {"id": "luogu_P5676", "category": "multiple_testcase_format", "reason": "Each test case contains only N followed by two arrays, but the program reads an extra m and shifts the entire remaining input, causing a crash."},
+  {"id": "luogu_P6306", "category": "code_error", "reason": "The submitted main function is empty and produces no answer."},
+  {"id": "luogu_P7245", "category": "problem_id_mapping_error", "reason": "The response is an unrelated airport/min-cost-flow program rather than the modular expectation calculation in the statement."},
+  {"id": "luogu_P7687", "category": "special_checker", "reason": "The reported bridge set is identical to the sample up to edge orientation and line order, both explicitly allowed by the statement."},
+  {"id": "luogu_P8096", "category": "code_error", "reason": "The dynamic-programming loops are incomplete and the program exits without computing or printing the requested count."},
+  {"id": "luogu_P8765", "category": "code_error", "reason": "The segment-tree implementation has invalid child-index aggregation and missing return paths; the official sample crashes with SIGSEGV."}
+]
